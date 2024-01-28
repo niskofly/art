@@ -1,0 +1,12 @@
+/* Общие стили */
+
+ul.simple_horizontal_menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+ul.simple_horizontal_menu li {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}

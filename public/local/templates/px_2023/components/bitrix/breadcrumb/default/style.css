@@ -1,0 +1,27 @@
+.bx-breadcrumb {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 24px;
+}
+
+.bx-breadcrumb-item {
+	display: flex;
+	align-items: center;
+}
+
+.bx-breadcrumb-item:before {
+	content: '/';
+	display: block;
+	padding: 0 10px;
+	color: #E37222;
+	font-size: 10px;
+
+}
+
+.bx-breadcrumb-item:first-child:before {
+	content: unset;
+}
+
+.bx-breadcrumb-item:last-child {
+	color: #E37222;
+}

@@ -1,0 +1,83 @@
+/* NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him. */
+
+.cookie-notification {
+	position: fixed;
+	right: 0;
+	bottom: -250px;
+	z-index: 10000000000;
+
+	width: 100%;
+	max-width: 100%;
+	padding: 15px 20px;
+
+	font-family: "Roboto", sans-serif;
+	line-height: 1.2;
+
+	background-color: #fff;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 3px solid #81746b;
+
+	transition: bottom 1s;
+}
+
+.cookie-notification--show {
+	bottom: 0;
+}
+
+.cookie-notification__text {
+	margin-bottom: 10px;
+
+	font-size: 14px;
+}
+
+.cookie-notification__button {
+	flex-shrink: 0;
+
+	text-align: center;
+}
+
+.cookie-notification__text a {
+	color: inherit;
+	font-family: "Roboto", sans-serif;
+	text-decoration: underline;
+}
+
+.cookie-notification__button .button {
+	display: inline-flex;
+	padding: 11px 30px;
+
+	color: #e3ddcc;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1em;
+	white-space: nowrap;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	background: linear-gradient(to top, #56524e, #81746b);
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 40%);
+	cursor: pointer;
+
+	transition: all 0.3s;
+}
+
+@media (min-width: 550px) {
+	.cookie-notification {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		border-top: 1px solid #e4e4e4;
+	}
+
+	.cookie-notification__text {
+		margin-bottom: 0;
+	}
+}
+
+.cookie-notification .button {
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 0;
+}

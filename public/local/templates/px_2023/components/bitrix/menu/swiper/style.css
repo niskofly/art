@@ -1,0 +1,28 @@
+.products-sections__link {
+	color: var(--color-black);
+	font-size: 10px;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	transition: all 0.3s;
+}
+
+.products-sections__link:hover {
+	opacity: 0.6;
+}
+
+.products-sections__link:active {
+	opacity: 0.3;
+}
+
+@media (min-width: 1440px) {
+	.products-sections__link {
+		font-size: 12px;
+	}
+}
+
+.swiper .products-sections__item {
+	width: auto;
+	padding-right: 2.5%;
+}

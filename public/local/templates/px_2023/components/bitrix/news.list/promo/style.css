@@ -1,0 +1,206 @@
+.card-promo {
+	border: 2px solid #fff;
+	border-radius: 15px;
+	min-height: 200px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	overflow: hidden;
+
+	background-position: center;
+	background-size: cover;
+}
+
+.card-promo__desc {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	background: rgba(248, 248, 248, 0.9);
+	bottom: -45px;
+	transition: .5s all;
+}
+
+.card-promo__desc .card-promo__text{
+	display: none;
+}
+.card-promo:hover .card-promo__text{
+	display: block;
+}
+
+
+.card-promo:hover .card-promo__desc {
+	bottom: 0;
+}
+
+.card-promo__label {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px 8px;
+	margin-bottom: 10px;
+	width: fit-content;
+
+	border-radius: 10px;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), linear-gradient(0deg, rgba(79, 255, 255, 0.20) 0%, rgba(79, 255, 255, 0.20) 100%), linear-gradient(155deg, rgba(160, 255, 249, 0.30) 9.93%, rgba(26, 216, 204, 0.30) 44.59%, rgba(36, 212, 202, 0.30) 91.08%);
+
+	box-shadow: 1px 1px 2px 0px rgba(255, 255, 255, 0.50) inset, -1px -1px 2px 0px rgba(36, 193, 193, 0.50) inset, 0px 0px 3px 0.2px rgba(165, 252, 243, 0.80);
+	backdrop-filter: blur(1.5px);
+
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	color: #008193;
+	text-shadow: 1px 1px 10px rgba(0, 255, 230, 0.80), -1px -1px 10px rgba(0, 255, 230, 0.80);
+}
+
+.card-promo__name {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	color: var(--color-main);
+	margin-bottom: 10px;
+}
+
+.card-promo__text {
+	color: #6B6B6B;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	margin-bottom: 20px;
+
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; /* number of lines to show */
+	line-clamp: 2 ;
+	-webkit-box-orient: vertical;
+	transition: .3s all;
+}
+
+.card-promo:hover .card-promo__text {
+	-webkit-line-clamp: 3; /* number of lines to show */
+	line-clamp: 3;
+}
+
+.card-promo__link {
+	padding: 9px;
+	width: 100%;
+}
+
+.card-promo__link.button {
+	font-size: 12px;
+}
+
+.owl-stage {
+	display: flex;
+
+}
+
+.owl-item {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80);
+	border-radius: 15px;
+	overflow: hidden;
+
+}
+
+.slider__item {
+	height: 100%;
+}
+
+.promo__card {
+	height: 100%;
+}
+
+.promo__container .owl-carousel .owl-stage-outer {
+	padding: 20px 0 20px 0;
+	margin-right: -10px;
+}
+
+.promo__container .owl-dots {
+	margin-top: 0;
+}
+
+.promo__container .slider__item {
+	min-height: 320px;
+}
+
+@media (min-width: 768px) {
+	.card-promo {
+		min-height: 320px;
+		border: 4px solid #fff;
+	}
+
+	.card-promo__label {
+		font-size: 14px;
+		padding: 4px 15px;
+	}
+
+	.card-promo__name {
+		font-size: 18px;
+	}
+
+	.card-promo__text {
+		font-size: 14px;
+	}
+
+
+	.card-promo__link.button {
+		font-size: 16px;
+		width: auto;
+		padding: 10px 30px;
+		align-self: flex-start;
+	}
+
+	.card-promo__desc {
+		bottom: -50px;
+	}
+
+	.promo__container .owl-carousel .owl-stage-outer {
+		margin-right: -8px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.card-promo {
+		min-height: 392px;
+	}
+
+	.card-promo__label {
+		margin-bottom: 20px;
+	}
+
+	.card-promo__name {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+
+	.card-promo__text {
+		font-size: 16px;
+	}
+
+	.owl-carousel button.owl-dot.active {
+		background: linear-gradient(0deg, rgba(79, 255, 255, 0.20) 0%, rgba(79, 255, 255, 0.20) 100%), radial-gradient(54.48% 56.95% at 50% 50%, rgba(160, 255, 249, 0.30) 0%, rgba(26, 216, 204, 0.30) 82.08%, rgba(36, 212, 202, 0.30) 100%);
+		box-shadow: 1px 1px 2px 0px rgba(255, 255, 255, 0.50) inset, -1px -1px 2px 0px rgba(36, 193, 193, 0.50) inset;
+		filter: drop-shadow(0px 0px 3px rgba(165, 252, 243, 0.80)) drop-shadow(0px 0px 1px rgba(0, 255, 230, 0.20));
+		backdrop-filter: blur(1.5px);
+	}
+
+	.owl-dots .owl-dot span{
+		display: none !important;
+	}
+}
+
+.owl-dots span{
+	display: none !important;
+}

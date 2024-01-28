@@ -1,0 +1,132 @@
+.ajax-form-1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 30px 65px 30px 20px;
+
+	background-color: #41af60;
+	border-radius: 4px;
+}
+
+.ajax-form-1__content {
+	max-width: 670px;
+}
+
+.ajax-form-1__top {
+	display: flex;
+	margin-bottom: 6px;
+}
+
+.ajax-form-1__icon {
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	margin-right: 45px;
+}
+
+.ajax-form-1__text {
+	color: #fff;
+	font-weight: 700;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 33px;
+}
+
+.ajax-form-1__bottom {
+	padding-left: 105px;
+
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	font-style: normal;
+	line-height: 25px;
+}
+
+.ajax-form-1__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 23px;
+
+	color: #018001;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	white-space: nowrap;
+
+	background: #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgb(0 0 0 / 20%), 0 3px 4px rgb(0 0 0 / 12%),
+		0 2px 4px rgb(0 0 0 / 14%);
+	cursor: pointer;
+
+	transition: all 0.3s ease;
+}
+
+.ajax-form-1__btn:hover {
+	color: #fff;
+
+	background: #018001;
+}
+
+@media (max-width: 1200px) {
+	.ajax-form-1 {
+		padding-right: 20px;
+	}
+
+	.ajax-form-1__top {
+		margin-bottom: 6px;
+	}
+
+	.ajax-form-1__icon {
+		margin-right: 25px;
+	}
+
+	.ajax-form-1__bottom {
+		padding-left: 85px;
+	}
+
+	.ajax-form-1__btn {
+		padding: 7px 13px;
+
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 750px) {
+	.ajax-form-1 {
+		flex-direction: column;
+		padding: 30px 10px 30px 10px;
+	}
+
+	.ajax-form-1__content {
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 25px;
+	}
+
+	.ajax-form-1__icon {
+		width: 55px;
+		min-width: 55px;
+		height: 55px;
+		margin-right: 20px;
+	}
+
+	.ajax-form-1__text {
+		margin-bottom: 12px;
+
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.ajax-form-1__bottom {
+		padding-left: 0;
+
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	.ajax-form-1__btn {
+		width: calc(100% - 20px);
+	}
+}

@@ -1,0 +1,56 @@
+<?php
+
+$MESS["OWL_COMPSIMPLE_PROP_SETTINGS"] = "Selection of information block and sections";
+$MESS["OWL_COMPSIMPLE_PROP_IBLOCK_TYPE"] = "Info block type";
+$MESS["OWL_COMPSIMPLE_PROP_IBLOCK_ID"] = "Infoblock";
+$MESS["OWL_COMPSIMPLE_PROP_SECTION_IDS"] = "Comma-separated partition IDs";
+$MESS["OWL_COMPSIMPLE_PROP_PARAMS"] = "Container Parameters";
+$MESS["OWL_COMPSIMPLE_PROP_WIDTH"] = "Width of the entire slider";
+$MESS["OWL_COMPSIMPLE_PROP_HEIGHT"] = "Slide Height";
+$MESS["OWL_PATH_JQUERY"] = "jquery library (if available on the site)";
+$MESS["OWL_PATH_OWL_LIB_JS"] = "owl, js library";
+$MESS["OWL_PATH_OWL_LIB_CSS"] = "owl library, css";
+$MESS["OWL_IBLOCK_DESC_ASC"] = "Ascending";
+$MESS["OWL_IBLOCK_DESC_DESC"] = "Descending";
+$MESS["OWL_IBLOCK_DESC_FID"] = "ID";
+$MESS["OWL_IBLOCK_DESC_FNAME"] = "Name";
+$MESS["OWL_IBLOCK_DESC_FACT"] = "Activity start date";
+$MESS["OWL_IBLOCK_DESC_FSORT"] = "Sort";
+$MESS["OWL_IBLOCK_DESC_FTSAMP"] = "Last modified date";
+$MESS["OWL_IBLOCK_DESC_IBORD1"] = "Field for the first news sorting";
+$MESS["OWL_IBLOCK_DESC_IBBY1"] = "Direction for the first news sorting";
+$MESS["OWL_IBLOCK_DESC_IBORD2"] = "Field for the second news sorting";
+$MESS["OWL_IBLOCK_DESC_IBBY2"] = "Direction for the second news sorting";
+$MESS["OWL_IBLOCK_DESC_ACTIVE_DATE_FORMAT"] = "Date display format";
+$MESS["OWL_COMPSIMPLE_ADDITIONAL_SETTINGS"] = "Additional parameters";
+$MESS["OWL_COMPSIMPLE_SORT_SETTINGS"] = "Sorting Options";
+$MESS["OWL_SHOW_PLACEHOLDER"] = "Use placeholder";
+$MESS["OWL_IBLOCK_DESC_LIST_CONT"] = "Number of items per page";
+$MESS["OWL_IBLOCK_DESC_DETAIL_PAGE_URL"] = "URL страницы детального просмотра (по умолчанию - из настроек инфоблока)";
+
+$MESS["OWL_IBLOCK_SECTION_ID"] = "Partition ID";
+$MESS["OWL_IBLOCK_FILTER"] = "Filter";
+$MESS["OWL_IBLOCK_PROPERTY"] = "Properties";
+$MESS["OWL_IBLOCK_FIELD"] = "Properties";
+
+$MESS["GROUP_OWL_DEFAULT"] = "Default slider parameters (for breakpoints - from 0 to the first)";
+$MESS["items"] = "Number of slides";
+$MESS["dots"] = "Navigation points";
+$MESS["nav"] = "Arrows";
+$MESS["loop"] = "Loop slides";
+$MESS["lazyLoad"] = "Lazy loading";
+$MESS["autoplay"] = "Auto-scroll";
+$MESS["autoplayHoverPause"] = "Delay when the mouse hovers over the slide";
+$MESS["autoplayTimeout"] = "Scrolling delay";
+$MESS["autoplaySpeed"] = "Animation speed";
+$MESS["resolution"] = "Permission";
+$MESS["smartSpeed"] = "Manual scroll speed";
+$MESS["autoWidth"] = "OWL autoWidth parameter";
+$MESS["margin"] = "OWL margin parameter";
+$MESS["BREAKPOINT_COUNT"] = "Number of breakpoints";
+$MESS["OWL_BREAKPOINT_TITLE"] = "Breakpoint ##NUM#";
+$MESS["ON"] = "Enable";
+$MESS["OFF"] = "Turn off";
+$MESS["UNSET"] = "By default (inherited for breakpoints)";
+$MESS["OWL_PATH_SHOW"] = "Page to display";
+$MESS["OWL_PATH_SHOW_RECURS"] = "Show subsections";

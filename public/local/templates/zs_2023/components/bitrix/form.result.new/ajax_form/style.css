@@ -1,0 +1,11 @@
+.ajax_cont_form {
+}
+
+.form-container .sk-circle-bounce .sk-child:before {
+	background-color: #7a983d;
+}
+
+.ajax-form__buttons {
+	display: flex;
+	justify-content: center;
+}

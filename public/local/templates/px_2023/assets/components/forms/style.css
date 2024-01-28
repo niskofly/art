@@ -1,0 +1,168 @@
+@import "placeholder.css";
+
+:root {
+	--placeholder--color: #d8cfd0;
+}
+
+.zs-modal-popup .form-container {
+	background-color: #fff;
+	padding: 20px;
+}
+
+@media ( min-width: 650px ) {
+	.zs-modal-popup .form-container {
+		padding: 60px;
+	}
+}
+
+.form-container .sk-circle-bounce .sk-child:before {
+	background-color: var(--contrast-color);
+}
+
+.js-fbf2-alert-danger, .js-fbf2-alert-success {
+	display: none;
+}
+
+.form-container {
+	text-align: left;
+	line-height: 1.3em;
+}
+
+.modal-title {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+@media ( min-width: 650px ) {
+	.modal-title {
+		margin-bottom: 40px;
+	}
+}
+
+
+.form-required {
+	color: red;
+}
+
+.message {
+	display: none;
+	font-size: 18px;
+	text-align: center;
+	line-height: 2em;
+}
+
+.message > div {
+	border: 7px solid var(--contrast-color);
+	padding: 44px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.message .success {
+	border-color: #7A983D;
+}
+
+.message .warning {
+	border-color: red;
+}
+
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+@media ( min-width: 650px ) {
+	.form-group {
+		margin-bottom: 30px;
+	}
+}
+
+.form-group__field-label {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.site input[type=text],
+.site input[type=email],
+.site input[type=date],
+.site select,
+.site textarea {
+	border: 1px solid #d8cfd0;
+	padding: var(--input-vertical-padding) 20px;
+	font-size: 18px;
+	outline: none;
+	box-shadow: 2px 3px 10px rgb(0 0 0 / 10%);
+	width: 100%;
+}
+
+.site textarea {
+	height: calc(3em + var(--input-vertical-padding) * 2);
+}
+
+@media ( min-width: 650px ) {
+	.site textarea {
+		height: 100px;
+	}
+}
+
+.site input[type=text]:focus,
+.site input[type=email]:focus,
+.site input[type=date]:focus,
+.site select:focus,
+.site textarea:focus {
+	border-color: var(--contrast-color);
+}
+
+.site input[type=date] {
+	width: fit-content;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-size: 16.5px;
+	text-transform: lowercase;
+	font-style: italic;
+	color: #c4c4c4;
+}
+
+.form-check__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+
+.form-check-input {
+	display: none;
+}
+
+.form-group__check-label {
+	color: var(--contrast-color);
+	background-color: white;
+	border: var(--contrast-color) 1px solid;
+	padding: 7px 10px;
+	border-radius: 1px;
+	cursor: pointer;
+	display: block;
+	margin: 0 10px 10px;
+}
+
+.form-check input:checked + .form-group__check-label {
+	color: white;
+	background-color: var(--contrast-color);
+}
+
+.agreement {
+	margin-bottom: 20px;
+}
+
+.site input[type=text].error {
+	color: red;
+	border-color: red;
+}

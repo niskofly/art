@@ -1,0 +1,31 @@
+.tabs {
+}
+
+.tabs__nav-item {
+	padding: 10px;
+
+	font-weight: bold;
+
+	cursor: pointer;
+}
+
+.tabs__nav-item--active {
+	color: var(--contrast-color);
+}
+
+.tabs__content {
+}
+
+.tabs__pane {
+	display: none;
+}
+
+.tabs__pane.tabs__pane--show {
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.tabs__nav {
+		display: flex;
+	}
+}

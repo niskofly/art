@@ -1,0 +1,83 @@
+/* .main-page__features {} */
+/* .inc-with-image {} */
+
+/* О клинике -- about-clinic */
+
+.inc-with-image {
+	display: grid;
+}
+
+.inc-with-image__image {
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0px 2px 20px 10px rgba(176, 200, 210, 0.30);
+
+	max-width: 500px;
+	max-height: 300px;
+	min-height: 180px;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site .inc-with-image__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.inc-with-image__text {
+	color: var(--color-dark);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.inc-with-image__link {
+	padding: 12px 30px;
+	max-width: 300px;
+	width: 100%;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 768px) {
+	.inc-with-image__text {
+		margin-bottom: 20px;
+	}
+
+	.inc-with-image__image {
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.inc-with-image {
+		grid-template-columns: 500px 1fr;
+		grid-template-rows: minmax(min-content, auto) minmax(min-content, 1fr);
+		grid-column-gap: 50px;
+	}
+
+	.inc-with-image__image {
+		grid-column: 1 / 2;
+		grid-row: 1 / 4;
+		margin-bottom: 0;
+	}
+
+	.inc-with-image__title.section-site__title.title {
+		text-align: left;
+	}
+
+	.inc-with-image__link {
+		margin: 0;
+		width: fit-content;
+	}
+}
+
+/* @media (min-width: 375px) {} */
+/* @media (min-width: 834px) {} */
+/* @media (min-width: 1440px) {} */
+/* @media (min-width: 1920px) {} */

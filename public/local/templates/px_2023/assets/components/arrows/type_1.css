@@ -1,0 +1,17 @@
+.live-arrow-block {
+	white-space: nowrap;
+}
+
+.live-arrow:after {
+	font-family: "fontello";
+	content: "\e80f";
+	font-size: 8px;
+	padding-left: 10px;
+	transition: padding 0.3s ease;
+	position: relative;
+	bottom: 0.1em;
+}
+
+.live-arrow:hover:after {
+	padding-left: 15px;
+}

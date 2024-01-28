@@ -1,0 +1,177 @@
+@import "placeholder.css";
+
+:root {
+	--placeholder--color: #d8cfd0;
+}
+
+.zs-modal-popup .form-container {
+	padding: 20px;
+
+	background-color: #fff;
+}
+
+@media (min-width: 650px) {
+	.zs-modal-popup .form-container {
+		padding: 60px;
+	}
+}
+
+.form-container .sk-circle-bounce .sk-child:before {
+	background-color: var(--contrast-color);
+}
+
+.js-fbf2-alert-danger,
+.js-fbf2-alert-success {
+	display: none;
+}
+
+.form-container {
+	line-height: 1.3em;
+	text-align: left;
+}
+
+.modal-title {
+	margin-bottom: 18px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media (min-width: 650px) {
+	.modal-title {
+		margin-bottom: 40px;
+	}
+}
+
+.form-required {
+	color: red;
+}
+
+.message {
+	display: none;
+
+	font-size: 18px;
+	line-height: 2em;
+	text-align: center;
+}
+
+.message > div {
+	margin-bottom: 50px;
+	padding: 44px;
+
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+
+	border: 7px solid var(--contrast-color);
+	border-radius: 10px;
+}
+
+.message .success {
+	border-color: #7a983d;
+}
+
+.message .warning {
+	border-color: red;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+@media (min-width: 650px) {
+	.form-group {
+		margin-bottom: 30px;
+	}
+}
+
+.form-group__field-label {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.site input[type="text"],
+.site input[type="email"],
+.site input[type="date"],
+.site select,
+.site textarea {
+	width: 100%;
+	padding: var(--input-vertical-padding) 20px;
+
+	font-size: 18px;
+
+	border: 1px solid #d8cfd0;
+	outline: none;
+	box-shadow: 2px 3px 10px rgb(0 0 0 / 10%);
+}
+
+.site textarea {
+	height: calc(3em + var(--input-vertical-padding) * 2);
+}
+
+@media (min-width: 650px) {
+	.site textarea {
+		height: 100px;
+	}
+}
+
+.site input[type="text"]:focus,
+.site input[type="email"]:focus,
+.site input[type="date"]:focus,
+.site select:focus,
+.site textarea:focus {
+	border-color: var(--contrast-color);
+}
+
+.site input[type="date"] {
+	width: fit-content;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #c4c4c4;
+	font-size: 16.5px;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.form-check__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.form-check-input {
+	display: none;
+}
+
+.form-group__check-label {
+	display: block;
+	margin: 0 10px 10px;
+	padding: 7px 10px;
+
+	color: var(--contrast-color);
+
+	background-color: white;
+	border: var(--contrast-color) 1px solid;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.form-check input:checked + .form-group__check-label {
+	color: white;
+
+	background-color: var(--contrast-color);
+}
+
+.agreement {
+	margin-bottom: 20px;
+}
+
+.site input[type="text"].error {
+	color: red;
+
+	border-color: red;
+}

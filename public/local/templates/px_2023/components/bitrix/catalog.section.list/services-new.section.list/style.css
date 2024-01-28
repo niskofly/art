@@ -1,0 +1,7 @@
+.default-list__item{
+	display: none;
+}
+
+.default-list__item.active{
+	display: block;
+}

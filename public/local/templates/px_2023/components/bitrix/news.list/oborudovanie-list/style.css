@@ -1,0 +1,134 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+
+.oborudovanie-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.oborudovanie__item{
+	width: 277.5px;
+	height: 277.5px;
+	border-radius: 15px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	cursor: pointer;
+	margin-right: 29px;
+	margin-bottom: 40px;
+	box-shadow: 0px 6px 50px 0px rgba(202, 214, 228, 0.40), 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80);
+}
+
+
+.oborudovanie__item:nth-of-type(4n){
+	margin-right: 0;
+}
+
+.bottom-oborudovanie{
+	position: absolute;
+	bottom: 0;
+	padding: 15px 20px;
+	width: 100%;
+	border-radius: 15px;
+	border: 1px solid #FFF;
+	background: linear-gradient(180deg, rgba(233, 242, 242, 0.66) 0%, rgba(253, 253, 253, 0.72) 100%, rgba(253, 253, 253, 0.72) 100%);
+	backdrop-filter: blur(10px);
+	height: 78px;
+}
+
+.oborudovanie__link{
+	height: 100%;
+	width: 100%;
+}
+
+.oborudovanie__title{
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	margin-bottom: 10px;
+	color: #000;
+}
+
+
+.oborudovanie__speciality{
+	color: #333;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	margin-bottom: 10px;
+	height: 38px;
+}
+
+.oborudovanie__work{
+	color: #333;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	height: 19px;
+}
+
+.oborudovanie__button{
+	padding: 12px 30px;
+	color: #333438;
+	font-family: Roboto;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-top: 30px;
+	display: none !important;
+	width: fit-content;
+}
+
+.oborudovanie__item:hover .oborudovanie__button{
+	display: block !important;
+}
+
+.oborudovanie__item:hover .oborudovanie__title{
+	color: #0AB6B6;
+}
+
+
+@media (max-width: 1280px) {
+	.oborudovanie__item:nth-of-type(4n){
+		margin-right: 29px;
+	}
+}
+
+
+@media (max-width: 650px) {
+	.oborudovanie-list{
+		display: flex;
+		justify-content: center;
+	}
+
+	.oborudovanie__item{
+		margin-left: 100%;
+		margin-right: 100%;
+		min-width: 280px;
+	}
+
+	.oborudovanie__item:nth-of-type(4n){
+		margin-right: 100%;
+	}
+}

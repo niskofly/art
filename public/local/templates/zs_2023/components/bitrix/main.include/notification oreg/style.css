@@ -1,0 +1,75 @@
+/*NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him.*/
+
+.cookie-notification {
+    position: fixed;
+    background-color: #fff;
+    z-index: 10000000000;
+    max-width: 100%;
+    width: 100%;
+    line-height: 1.2;
+    border-bottom: 3px solid #d41320;
+    padding: 8px 15px;
+    transition: bottom 1s;
+    border-top: 1px solid #e4e4e4;
+    font-family: "Manrope", sans-serif;
+}
+
+.cookie-notification--show {
+    bottom: 0;
+}
+
+.cookie-notification__text {
+    font-size: 13px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.cookie-notification__button {
+    flex-shrink: 0;
+    text-align: right;
+
+}
+
+.cookie-notification__text a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.cookie-notification .btn_all_articel {
+    padding: 0 15px;
+}
+
+.btn-default {
+    background-color: #d41320;
+}
+
+.btn-default {
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    text-transform: lowercase;
+    text-decoration: none !important;
+    height: 35px;
+    line-height: 36px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+@media ( min-width: 550px ) {
+
+    .cookie-notification {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #e4e4e4;
+    }
+
+    .cookie-notification__text {
+        margin-bottom: 0;
+
+    }
+}

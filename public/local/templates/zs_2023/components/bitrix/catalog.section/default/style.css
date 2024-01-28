@@ -1,0 +1,8 @@
+.section-list__list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.section-list__item {
+	width: 33.3em;
+	height: 200px;
+}

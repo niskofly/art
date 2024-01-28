@@ -1,0 +1,23 @@
+.menu-our-team__list {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+
+.menu-our-team__item {
+	margin-right: 50px;
+
+	color: rgb(85, 26, 139);
+	font-weight: 900;
+	font-size: 30px;
+
+	border-bottom: dotted transparent 2px;
+}
+
+.menu-our-team__item.active {
+	color: #000;
+}
+
+.menu-our-team__item:not(.active):hover {
+	border-bottom-color: #2e3cd8;
+}

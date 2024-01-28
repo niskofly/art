@@ -1,0 +1,1 @@
+<img alt="Наше оборудование" src="/local/templates/px_2023/assets/images/equipment.png">

@@ -1,0 +1,129 @@
+.otvet-list__item{
+	display: none;
+	border-radius: 15px;
+	border: 1px solid #FFF;
+	background: linear-gradient(180deg, rgba(233, 242, 242, 0.66) 0%, rgba(253, 253, 253, 0.42) 100%, rgba(253, 253, 253, 0.42) 100%), #FAFDFE;
+	box-shadow: 0px 6px 20px 0px rgba(202, 214, 228, 0.40);
+	padding: 30px;
+	margin-bottom: 40px;
+	color: #5A5A5A;
+}
+
+.otvet-list__item.active{
+	display: block;
+}
+
+.vopros-sections{
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 40px;
+}
+
+.vopros-sections .filter-sections{
+	border-radius: 15px;
+	background: #FFF;
+	box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80);
+	padding: 10px 15px;
+	margin-right: 20px;
+	line-height: normal;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	max-height: 40px;
+	color: #000;
+	white-space: nowrap;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.vopros-sections .filter-sections.active{
+	color: #0AB6B6;
+}
+
+
+a.vopros__title{
+	font-family: Sansation;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px; /* 120% */
+	letter-spacing: 0.15px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #A5A5A5;
+	margin-bottom: 20px;
+	display: block;
+	color: #5A5A5A;
+}
+
+.vopros__name{
+	margin-left: 30px;
+	margin-bottom: 20px;
+	font-family: Sansation;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21.6px;
+	position: relative;
+}
+
+.vopros__name:before{
+	content: url("./img/ask.svg");
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: -4px;
+	left: -35px;
+}
+
+.otvet__name{
+	margin-left: 30px;
+	margin-bottom: 20px;
+	font-family: Sansation;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21.6px;
+	position: relative;
+}
+
+.otvet__name:before{
+	content: url("./img/ask.svg");
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: -4px;
+	left: -35px;
+}
+
+.vopros__value{
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+
+.otvet__value{
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 27px;
+}
+
+@media (max-width: 650px) {
+	.vopros-sections{
+		flex-wrap: nowrap;
+		overflow: auto;
+		padding-bottom: 20px;
+	}
+
+
+
+	.vopros-sections::-webkit-scrollbar {
+		display: none;
+	}
+}

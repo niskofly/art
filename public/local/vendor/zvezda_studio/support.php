@@ -1,0 +1,1 @@
+<a class="developer__link" style="color:orange; line-height: 1;" href="https://zvezda-studio.ru/" target="_blank">&#9734;</a>

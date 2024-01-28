@@ -1,0 +1,119 @@
+.form-container .sk-circle-bounce .sk-child:before {
+	background-color: var(--color-fadedJade);
+}
+
+.js-fbf2-alert-danger,
+.js-fbf2-alert-success {
+	display: none;
+}
+
+.form-container {
+	max-width: 500px;
+
+	line-height: 1.3em;
+	text-align: left;
+}
+
+.modal-title {
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.form-required {
+	color: red;
+}
+
+.message {
+	display: none;
+
+	font-size: 18px;
+	line-height: 2em;
+	text-align: center;
+}
+
+.message > div {
+	margin-bottom: 50px;
+	padding: 44px;
+
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+
+	border: 7px solid #7a983d;
+	border-radius: 10px;
+}
+
+.message .success {
+	border-color: #7a983d;
+}
+
+.message .warning {
+	border-color: red;
+}
+
+.form-body {
+	padding: 0 30px 50px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.form-group__field-label {
+	margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group textarea {
+	padding: 7px 20px;
+
+	color: green;
+	font-size: 18px;
+
+	border: 1px solid #017d01;
+	outline: none;
+}
+
+.form-check__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.form-check-input {
+	display: none;
+}
+
+.form-group__check-label {
+	display: block;
+	margin: 0 10px 10px;
+	padding: 7px 10px;
+
+	color: #017d01;
+
+	background-color: white;
+	border: #017d01 1px solid;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.form-check input:checked + .form-group__check-label {
+	color: white;
+
+	background-color: #017d01;
+}
+
+.agreement {
+	margin-bottom: 20px;
+}
+
+.form-group input[type="text"].error {
+	color: red;
+
+	border-color: red;
+}

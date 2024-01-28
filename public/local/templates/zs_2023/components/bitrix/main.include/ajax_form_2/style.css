@@ -1,0 +1,409 @@
+.prices_back-call {
+	margin-bottom: 30px;
+
+	color: white;
+}
+
+.prices_back-call .modal-title,
+.prices_back-call .form-body hr {
+	display: none;
+}
+
+.prices_back-call .form-container {
+	max-width: unset;
+	padding: 25px 30px 20px 30px;
+
+	color: #fff;
+
+	background: #379351;
+}
+
+.prices_back-call .form-container .form-body {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.prices_back-call .form-container .agreement {
+	margin-top: 15px;
+
+	color: inherit;
+	font-size: 12px;
+}
+
+.prices_back-call .form-container a,
+.prices_back-call .form-container a:visited,
+.prices_back-call .form-container a:active {
+	color: inherit;
+}
+
+.prices_back-call .form-container input[type='text'],
+.prices_back-call .form-container input[type='tel'] {
+	margin-bottom: 5px;
+	padding: 0 20px 9px;
+
+	color: inherit;
+
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+
+.prices_back-call .form-container .button {
+	width: 100%;
+	padding: 16px 15px;
+
+	color: #018001;
+
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+.prices_back-call .form-container .button:hover {
+	color: #fff;
+
+	background: #018001;
+}
+
+.prices_back-call .form-container .form-group__field-label {
+	font-size: 15px;
+}
+
+@media (max-width: 750px) {
+	.prices_back-call .form-container .button {
+		font-size: 16px;
+	}
+}
+
+.prices_back-call {
+	position: relative;
+
+	display: flex;
+
+	background: #41af60;
+	border-radius: 4px;
+}
+
+.prices_back-call__left {
+	display: flex;
+	width: 730px;
+	min-width: 730px;
+	padding-top: 15px;
+	padding-left: 50px;
+}
+
+.prices_back-call_img {
+	flex-shrink: 0;
+	width: 248px;
+	height: 300px;
+}
+
+.prices_back-call_img img {
+	width: 248px;
+	height: 300px;
+	margin: 0;
+	object-fit: cover;
+}
+
+.prices_back-call_text {
+	margin-top: 20px;
+}
+
+.prices_back-call_text-title {
+	position: relative;
+
+	display: block;
+	width: 320px;
+	margin-bottom: 15px;
+
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+.prices_back-call_text-title:before {
+	position: absolute;
+	right: -55px;
+	bottom: 3px;
+
+	width: 45px;
+	height: 17px;
+
+	background: url('/include/index-blocks/img/prices_back-call/right.svg')
+		no-repeat center;
+
+	content: '';
+}
+
+.prices_back-call .prices_back-call_text-call {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	color: #fff;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 150%;
+	text-decoration-line: underline;
+}
+
+.prices_back-call_text-call {
+	color: inherit;
+}
+
+.prices_back-call_text-call img {
+	margin-right: 15px;
+}
+
+.prices_back-call_text-descr {
+	display: block;
+
+	color: #fff;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.prices-error {
+	display: block;
+	margin-top: -20px;
+	margin-bottom: 25px;
+
+	color: #eb5757;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.prices-form-message {
+	color: #fff;
+	font-size: 15px;
+}
+
+.prices_back-call_form {
+	display: flex;
+	flex-direction: column;
+	padding: 35px 30px 20px 30px;
+
+	background: #379351;
+}
+
+.prices_back-call_form input {
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+
+	background: none;
+	border: none;
+	border-bottom: 2px solid #fff;
+}
+
+.label-prices-name,
+.label-prices-phone {
+	position: absolute;
+	top: -15px;
+	left: 0;
+
+	display: none;
+	padding: 0;
+
+	color: #fff;
+	font-size: 14px;
+	line-height: 19px;
+
+	background: none;
+}
+
+.prices_back-call_form input[name='name']:focus ~ .label-prices-name {
+	display: block;
+}
+
+.prices_back-call_form input[name='tel']:focus ~ .label-prices-phone {
+	display: block;
+}
+
+.prices_back-call_form input[name='name']:focus::-webkit-input-placeholder,
+.prices_back-call_form input[name='tel']:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+.prices_back-call_form input[name='name']:focus::-moz-placeholder,
+.prices_back-call_form input[name='tel']:focus::-moz-placeholder {
+	opacity: 0;
+}
+
+.prices_back-call_form input[name='name']:focus:-ms-input-placeholder,
+.prices_back-call_form input[name='tel']:focus:-ms-input-placeholder {
+	opacity: 0;
+}
+
+.prices_back-call_form input[name='name']:focus::-ms-input-placeholder,
+.prices_back-call_form input[name='tel']:focus::-ms-input-placeholder {
+	opacity: 0;
+}
+
+.prices_back-call_form input[name='name']:focus::placeholder,
+.prices_back-call_form input[name='tel']:focus::placeholder {
+	opacity: 0;
+}
+
+.prices_back-call_form input::-webkit-input-placeholder {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+
+	opacity: 0.64;
+}
+
+.prices_back-call_form input::-moz-placeholder {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+
+	opacity: 0.64;
+}
+
+.prices_back-call_form input:-ms-input-placeholder {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+
+	opacity: 0.64;
+}
+
+.prices_back-call_form input::-ms-input-placeholder {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+
+	opacity: 0.64;
+}
+
+.prices_back-call_form input::placeholder {
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+
+	opacity: 0.64;
+}
+
+.prices_back-call_form button {
+	margin-bottom: 15px;
+	padding: 11px 30px;
+
+	color: #018001;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.12),
+		0 2px 4px rgba(0, 0, 0, 0.14);
+	cursor: pointer;
+
+	transition: all 0.3s ease;
+}
+
+.prices_back-call_form button:hover {
+	color: #fff;
+
+	background: #018001;
+}
+
+.prices_back-call_form-desc {
+	color: #fff;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.prices_back-call_form-desc a {
+	color: #fff;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+@media (max-width: 1200px) {
+	.prices_back-call {
+		flex-direction: column;
+	}
+
+	.prices_back-call_form {
+		padding: 35px 100px 20px 100px;
+	}
+}
+
+@media (max-width: 750px) {
+	.prices_back-call {
+		margin-right: -15px;
+		margin-left: -15px;
+
+		border-radius: 0;
+	}
+
+	.prices_back-call__left {
+		position: relative;
+
+		width: 320px;
+		min-width: 320px;
+		height: 303px;
+		padding-top: 10px;
+		padding-left: 0;
+		overflow: hidden;
+	}
+
+	.prices_back-call_img {
+		position: absolute;
+		bottom: 0;
+		left: -95px;
+
+		width: auto;
+		height: 250px;
+	}
+
+	.prices_back-call_img img {
+		width: auto;
+		height: 250px;
+	}
+
+	.prices_back-call_text {
+		width: 210px;
+		margin: 0 0 0 auto;
+	}
+
+	.prices_back-call_text-title {
+		width: 195px;
+		margin-bottom: 10px;
+
+		font-size: 15px;
+	}
+
+	.prices_back-call_text-call img {
+		width: 23px;
+		height: 23px;
+		margin-right: 10px;
+	}
+
+	.prices_back-call_text-call {
+		margin-bottom: 15px;
+
+		font-size: 18px;
+	}
+
+	.prices_back-call_text-descr {
+		width: 195px;
+
+		font-size: 13px;
+	}
+
+	.prices_back-call_form {
+		padding: 35px 15px 20px 15px;
+	}
+
+	.prices_back-call_form button {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}

@@ -1,0 +1,105 @@
+.zs-modal-popup.zs-modal-popup--hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.zs-modal-popup {
+	position: fixed;
+
+	z-index: 10;
+
+	margin: 0 auto;
+
+	visibility: visible;
+	opacity: 1;
+
+	transition: 0.55s opacity, 0.55s visibility;
+}
+
+.zs-modal-popup__item {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 100%;
+	padding: 3% 0 0 0;
+
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.zs-modal-popup__modalent {
+	position: relative;
+	z-index: 1025;
+
+	width: 500px;
+	max-width: 100%;
+	max-height: 80vh;
+	padding: 25px 30px;
+	overflow: auto;
+
+	background: #fff;
+
+	border-radius: 4px;
+	box-shadow: 0 8px 10px rgb(0 0 0 / 20%), 0 6px 30px rgb(0 0 0 / 12%),
+		0 16px 24px rgb(0 0 0 / 14%);
+}
+
+.zs-modal-popup__content {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 560px;
+	max-width: 100%;
+	max-height: calc(100vh - 15px - 6%);
+	margin: 15px auto;
+
+	background: white top center;
+	background-size: cover;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(206, 164, 114, 0.4);
+}
+
+.zs-modal-popup.wide .zs-modal-popup__content {
+	width: 80%;
+}
+
+@media (max-width: 600px) {
+	.zs-modal-popup__content {
+		width: 100%;
+	}
+}
+
+.zs-modal-popup__image {
+	display: block;
+}
+
+.zs-modal-popup__text {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.zs-modal-popup__close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+
+	width: 17px;
+	height: 17px;
+	margin: 15px 15px 0 0;
+
+	outline: none;
+	cursor: pointer;
+	opacity: unset;
+
+	transition: all 0.2s ease-in;
+}

@@ -1,0 +1,41 @@
+.bx-filter {
+	margin-bottom: 60px;
+}
+
+.bx-filter-parameters-box-title {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.bx-filter-parameters-box-container {
+	display: flex;
+}
+
+.bx-filter .form-group__check-label {
+	margin: 0;
+}
+
+
+.form-check input:checked + .form-group__check-label {
+	border-color: #fff;
+}
+
+.bx-filter .form-body {
+	padding: 0;
+}
+
+.bx-filter form {
+	padding: 30px 50px 60px;
+}
+
+.bx-filter .form-body--horizontal {
+	margin: 0 -30px;
+}
+
+.bx-filter .bx-filter-parameters-box {
+	padding: 0 30px;
+}
+
+.bx-filter-parameters-box-container .button {
+	margin-right: 30px;
+}

@@ -1,0 +1,37 @@
+.with-aside {
+	--aside-width: 295px; /* Ширина критична для корректного адаптива */
+	--aside-margin: 50px;
+	padding-top: 50px;
+	width: 100%;
+}
+
+.with-aside .breadcrumb {
+	padding-top: 0;
+}
+
+@media (min-width: 1000px) {
+	.with-aside {
+		display: flex;
+	}
+
+	.with-aside__aside,
+	.with-aside__content {
+		flex-shrink: 0;
+	}
+
+	.with-aside__aside {
+		width: var(--aside-width);
+	}
+
+	.with-aside__content {
+		width: calc(100% - var(--aside-width) - var(--aside-margin));
+	}
+
+	.with-aside__aside + .with-aside__content {
+		margin-left: var(--aside-margin);
+	}
+
+	.with-aside__content + .with-aside__aside {
+		margin-left: var(--aside-margin);
+	}
+}

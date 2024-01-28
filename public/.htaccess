@@ -1,0 +1,131 @@
+######## AUTH (https://web-specialist.info/htpasswd-gen/)
+#AuthType Basic
+#AuthName "Protected Area"
+#AuthUserFile /home/c/cs19656/public_html/.htpasswd
+#Require valid-user
+
+Options -Indexes
+ErrorDocument 404 /404.php
+
+# START По рекомендации сканера безопасности
+<IfModule headers_module>
+	Header set X-Frame-Options SAMEORIGIN
+	Header set X-Content-Type-Options nosniff
+	Header set Strict-Transport-Security: max-age=31536000
+</IfModule>
+
+# END По рекомендации сканера безопасности
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+    RewriteBase   /
+
+    RewriteCond %{HTTP_HOST} clinic-ck\.ru [OR]
+    RewriteCond %{HTTP_HOST} arti-stom\.ru [OR]
+    RewriteCond %{HTTP_HOST} arti-stom\.ru [OR]
+    RewriteCond %{HTTP_HOST} артистом\.рф [OR]
+    RewriteCond %{HTTP_HOST} арти-стом\. [OR]
+    RewriteCond %{HTTP_HOST} ^www\.artistom\.ru(.*) [NC]
+    RewriteRule ^(.*)$ https://new.artistom.ru/$1 [R=301,L]
+
+    # редирект на https, Для сео лучше тут, чем в панели.
+    # Если настроен - отключить и сделать этот, так точно не будет технических дублей с 443 портом
+        RewriteCond %{HTTPS} off
+        RewriteCond %{HTTP:X-Forwarded-Proto} !https
+        RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ # убираем /index.php в конце алиаса
+    # криво работает если не указать RewriteBase   / (см рядом с RewriteEngine On )
+        RewriteCond %{REQUEST_URI} !^/bitrix/
+        RewriteCond %{REQUEST_URI} !^/cgi-bin/
+        RewriteRule ^(.*)index\.php$ https://%{HTTP_HOST}/$1 [R=301,L]
+        RewriteRule ^(.*)index\.html$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+    # убираем дубли "/"
+        RewriteCond %{REQUEST_URI} !^/bitrix/
+        RewriteCond %{REQUEST_URI} !^/cgi-bin/
+        RewriteCond %{REQUEST_URI} ^(.*?)\/{2,}(.*?)$
+        RewriteRule . %1/%2 [L,R=301]
+        RewriteCond %{THE_REQUEST} //
+        RewriteRule .* https://%{HTTP_HOST}/$0 [R=301,L]
+
+
+    # добавляем / в конце алиасов
+        RewriteCond %{REQUEST_URI} !^/bitrix/
+        RewriteCond %{REQUEST_URI} !^/cgi-bin/
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-l
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+        RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [R=301,L]
+
+    # Запрет PHAR, по замечанию от сканера безопасности. Ошибка не уйдёт, но дыра закрыта
+    # дополнительно в php.ini
+    # phar.readonly = Off
+    # phar.require_hash = Off
+        RewriteCond %{REQUEST_URI} \.phar$ [NC]
+        RewriteRule (.*) - [F]
+
+    # Стандартные инструкции битрикса
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-l
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+        RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+        RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+</IfModule>
+
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+# сжатие text, html, javascript, css, xml:
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript image/svg+xml
+
+
+</ifModule>
+ 
+# кеш браузера
+<ifModule mod_expires.c>
+ExpiresActive On
+ 
+#по умолчанию кеш в 5 секунд
+ExpiresDefault "access plus 1 days"
+ 
+# Включаем кэширование изображений и флэш на месяц
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType image/jpeg "access plus 4 weeks"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/gif "access plus 43829 minutes"
+ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+ 
+# Включаем кэширование css, javascript и текстовых файлоф на одну неделю
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 604800 seconds"
+ExpiresByType application/javascript "access plus 604800 seconds"
+ExpiresByType application/x-javascript "access plus 604800 seconds"
+ 
+# Включаем кэширование html и htm файлов на один день
+ExpiresByType text/html "access plus 43200 seconds"
+
+# Включаем кэширование xml файлов на десять минут
+ExpiresByType application/xhtml+xml "access plus 600 seconds"
+ 
+# Нестандартные шрифты сайта 
+ExpiresByType application/x-font-ttf "access plus 1 month"
+ExpiresByType font/opentype "access plus 1 month"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+</ifModule>
+
+php_value output_buffering 4096

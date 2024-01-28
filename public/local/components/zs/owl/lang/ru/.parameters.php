@@ -1,0 +1,56 @@
+<?php
+
+$MESS["OWL_COMPSIMPLE_PROP_SETTINGS"] = "Выбор инфоблока и разделов";
+$MESS["OWL_COMPSIMPLE_PROP_IBLOCK_TYPE"] = "Тип инфоблока";
+$MESS["OWL_COMPSIMPLE_PROP_IBLOCK_ID"] = "Инфоблок";
+$MESS["OWL_COMPSIMPLE_PROP_SECTION_IDS"] = "ID разделов через запятую";
+$MESS["OWL_COMPSIMPLE_PROP_PARAMS"] = "Параметры контейнера";
+$MESS["OWL_COMPSIMPLE_PROP_WIDTH"] = "Ширина всего слайдера";
+$MESS["OWL_COMPSIMPLE_PROP_HEIGHT"] = "Высота слайда";
+$MESS["OWL_PATH_JQUERY"] = "Библиотека jquery (если есть на сайте)";
+$MESS["OWL_PATH_OWL_LIB_JS"] = "Библиотека owl, js";
+$MESS["OWL_PATH_OWL_LIB_CSS"] = "Библиотека owl, css";
+$MESS["OWL_IBLOCK_DESC_ASC"] = "По возрастанию";
+$MESS["OWL_IBLOCK_DESC_DESC"] = "По убыванию";
+$MESS["OWL_IBLOCK_DESC_FID"] = "ID";
+$MESS["OWL_IBLOCK_DESC_FNAME"] = "Название";
+$MESS["OWL_IBLOCK_DESC_FACT"] = "Дата начала активности";
+$MESS["OWL_IBLOCK_DESC_FSORT"] = "Сортировка";
+$MESS["OWL_IBLOCK_DESC_FTSAMP"] = "Дата последнего изменения";
+$MESS["OWL_IBLOCK_DESC_IBORD1"] = "Поле для первой сортировки новостей";
+$MESS["OWL_IBLOCK_DESC_IBBY1"] = "Направление для первой сортировки новостей";
+$MESS["OWL_IBLOCK_DESC_IBORD2"] = "Поле для второй сортировки новостей";
+$MESS["OWL_IBLOCK_DESC_IBBY2"] = "Направление для второй сортировки новостей";
+$MESS["OWL_IBLOCK_DESC_ACTIVE_DATE_FORMAT"] = "Формат показа даты";
+$MESS["OWL_COMPSIMPLE_ADDITIONAL_SETTINGS"] = "Дополнительные параметры";
+$MESS["OWL_COMPSIMPLE_SORT_SETTINGS"] = "Параметры сортировки";
+$MESS["OWL_SHOW_PLACEHOLDER"] = "Использовать placeholder";
+$MESS["OWL_IBLOCK_DESC_LIST_CONT"] = "Количество элементов на странице";
+$MESS["OWL_IBLOCK_DESC_DETAIL_PAGE_URL"] = "URL страницы детального просмотра (по умолчанию - из настроек инфоблока)";
+
+$MESS["OWL_IBLOCK_SECTION_ID"] = "ID раздела";
+$MESS["OWL_IBLOCK_FILTER"] = "Фильтр";
+$MESS["OWL_IBLOCK_PROPERTY"] = "Свойства";
+$MESS["OWL_IBLOCK_FIELD"] = "Свойства";
+
+$MESS["GROUP_OWL_DEFAULT"] = "Параметры слайдера по умолчанию (при брекпоинтах - от 0 до первого)";
+$MESS["items"] = "Количество слайдов";
+$MESS["dots"] = "Навигационные точки";
+$MESS["nav"] = "Стрелки";
+$MESS["loop"] = "Зациклить слайды";
+$MESS["lazyLoad"] = "Ленивая загрузка";
+$MESS["autoplay"] = "Автопрокрутка";
+$MESS["autoplayHoverPause"] = "Задержка при зависании мышки над слайдом";
+$MESS["autoplayTimeout"] = "Задержка пролистывания";
+$MESS["autoplaySpeed"] = "Скорость анимации";
+$MESS["resolution"] = "Разрешение";
+$MESS["smartSpeed"] = "Скорость прокрутки ручной";
+$MESS["autoWidth"] = "Параметр OWL autoWidth";
+$MESS["margin"] = "Параметр OWL margin";
+$MESS["BREAKPOINT_COUNT"] = "Колличество брекпоинтов";
+$MESS["OWL_BREAKPOINT_TITLE"] = "Брекпоинт №#NUM#";
+$MESS["ON"] = "Включить";
+$MESS["OFF"] = "Выключить";
+$MESS["UNSET"] = "По умолчанию (для брекпоинтов наследуется)";
+$MESS["OWL_PATH_SHOW"] = "Страница для отображения";
+$MESS["OWL_PATH_SHOW_RECURS"] = "Показывать подразделах";

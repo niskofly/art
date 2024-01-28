@@ -1,0 +1,21 @@
+.submenu__menu {
+	height: 0;
+	transition: all 0.3s;
+	overflow: hidden;
+}
+
+.submenu__mobile-button {
+	cursor: pointer;
+	border: 1px solid white;
+}
+
+@media (min-width: 768px) {
+	.submenu__mobile-button {
+		display: none;
+	}
+
+	.submenu__menu {
+		height: auto;
+		transition: height 0.3s;
+	}
+}

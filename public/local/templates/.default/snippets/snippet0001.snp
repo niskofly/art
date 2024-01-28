@@ -1,0 +1,19 @@
+<div class="image-gallery">
+	<div class="image-gallery__item">
+		<figure>
+			<img src="/local/templates/zs_2023/assets/images/logo.png" alt="Подпись">
+			<figcaption>
+				Подпись
+			</figcaption>
+		</figure>
+	</div>
+
+	<div class="image-gallery__item">
+		<figure>
+			<img src="/local/templates/zs_2023/assets/images/logo.png" alt="Подпись">
+			<figcaption>
+				Подпись
+			</figcaption>
+		</figure>
+	</div>
+</div>

@@ -1,0 +1,104 @@
+.main-slider .item {
+	display: block;
+	width: 100%;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.top-slider-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.main-slider .item {
+		height: 280px;
+	}
+
+	.top-slider-placeholder {
+		height: 280px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.main-slider .item {
+		height: 450px;
+	}
+
+	.top-slider-placeholder {
+		height: 450px;
+	}
+}
+
+.top-slider {
+	position: relative;
+}
+
+.top-slider-upload {
+	position: absolute !important;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.top-slider a.item,
+.top-slider a.item:hover {
+	border-bottom: none;
+}
+
+.top-slider .item img {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.top-slider-placeholder picture {
+	height: 100%;
+}
+
+.top-slider-placeholder img {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.top-slider .owl-dots {
+	position: absolute;
+	bottom: 45px;
+
+	height: 0;
+}
+
+.top-slider .owl-dots button span {
+	margin: 0 7px;
+}
+
+.main-slider .arrow-type-2 .owl-nav {
+	right: 0;
+	left: 0;
+}
+
+.main-slider .owl-carousel .owl-nav button div {
+	margin: 60px 0;
+	padding: 20px 0 20px 60px;
+
+	background-position: right;
+}
+
+.main-slider .owl-nav button.owl-next div {
+	padding-right: 60px;
+	padding-left: 0;
+}
+
+.top-slider .sk-circle-bounce {
+	width: 3em;
+	height: 5em;
+}
+
+.top-slider .sk-circle-bounce .sk-child:before {
+	background-color: #9fd4d4;
+}

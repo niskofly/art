@@ -1,0 +1,580 @@
+/* Наше оборудование -- equipment */
+
+.equipment {
+	position: relative;
+	border-radius: 15px;
+	background: linear-gradient(
+			0deg,
+			rgba(255, 255, 255, 0.2) 0%,
+			rgba(255, 255, 255, 0.2) 100%
+		),
+		linear-gradient(
+			113deg,
+			rgba(255, 255, 255, 0.5) -17.04%,
+			rgba(237, 237, 237, 0.5) 99.32%
+		);
+	box-shadow: 0px 6px 50px 0px rgba(202, 214, 228, 0.4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	padding: 175px 10px 70px 10px;
+	margin-top: 80px;
+}
+
+.equipment__wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.equipment__title {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	margin-bottom: 20px;
+}
+
+.equipment__description {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	margin-bottom: 20px;
+}
+
+.equipment__link.button {
+	padding: 12px 25px;
+	transition: 0.3s;
+}
+
+.equipment__preview {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, -80px);
+	width: 230px;
+	height: 230px;
+
+	border-radius: 100%;
+	padding: 16px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.equipment__preview::before {
+	content: '';
+	position: absolute;
+	border: 2px solid #09cacc;
+	left: -20px;
+	opacity: 0;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	animation: pulse 3s linear infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.7);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(2.2);
+		opacity: 0;
+	}
+}
+
+.equipment__preview::after,
+.equipment__preview::before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	border: 2px solid #09cacc;
+	left: -20px;
+	opacity: 0;
+	right: -20px;
+	top: -20px;
+	bottom: -20px;
+	border-radius: 50%;
+	filter: blur(1px);
+	animation: pulse 3.5s linear infinite;
+}
+
+.equipment__preview::after {
+	animation-delay: 1.25s;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.7);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}
+
+.equipment__preview .icon {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.equipment__image {
+	width: 195px;
+	height: 195px;
+	flex: 0 0 auto;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.equipment__image > * {
+	height: 100%;
+	width: 100%;
+}
+
+.site .equipment__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* О клинике -- about-clinic */
+
+.about-clinic__wrapper {
+	margin-bottom: 30px;
+}
+
+.about-clinic__desc-bottom {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	color: var(--color-dark);
+}
+
+/* Стоматология и косметология --  services-banner */
+
+.dentistry {
+	border-radius: 15px;
+	background: rgba(244, 249, 253, 0.3);
+	box-shadow: 6px 6px 35px 0px rgba(0, 0, 0, 0.2),
+		-6px -6px 35px 0px rgba(255, 255, 255, 0.9);
+	position: relative;
+	display: flex;
+	height: 450px;
+	overflow: hidden;
+}
+
+.dentistry__path {
+	flex: 0 0 50%;
+	padding: 9px 7px 12px 7px;
+
+	background: transparent;
+	-webkit-backdrop-filter: blur(0px);
+	backdrop-filter: blur(0px);
+
+	box-shadow: -2px -4px 4px 0px rgba(0, 0, 0, 0) inset,
+		2px 4px 4px 0px rgba(255, 255, 255, 0) inset;
+
+	position: relative;
+	z-index: 2;
+	transition: all 0.7s;
+}
+
+.dentistry__path .dentistry__mask {
+	height: 55%;
+	top: 66%;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.site .dentistry__mask img {
+	height: 100%;
+}
+
+.dentistry__path--left .dentistry__mask {
+	position: absolute;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.dentistry__path--right .dentistry__mask {
+	position: absolute;
+	left: 0;
+	transform: scaleX(-1) translateY(-50%);
+}
+
+.dentistry__content {
+	height: 100%;
+}
+
+.dentistry__title {
+	font-family: 'Sansation', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	color: var(--color-main);
+	margin-bottom: 10px;
+	transition: 0.3s;
+
+	position: relative;
+}
+
+.dentistry__title::after {
+	content: '';
+	display: block;
+
+	position: absolute;
+	left: 0;
+	bottom: -2, 5px;
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-main);
+}
+
+.dentistry__link {
+	padding: 9px 10px;
+}
+
+.dentistry__link .icon {
+	width: 11px;
+	height: 9px;
+	fill: #333438;
+	transition: 0.3s;
+}
+
+.dentistry__link span {
+	display: none;
+	transition: 0.3s;
+}
+
+.dentistry__description {
+	display: none;
+	flex-direction: column;
+	margin-top: auto;
+	width: 65%;
+}
+
+.dentistry__path.active .dentistry__description {
+	display: flex;
+}
+
+.dentistry__tab-more {
+	display: flex;
+	align-items: center;
+
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	color: var(--color-main);
+	margin-bottom: 10px;
+
+	border: none;
+	background: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.dentistry__tab-more .icon {
+	width: 11px;
+	height: 9px;
+	fill: var(--color-main);
+	transition: 0.3s;
+	margin-left: 10px;
+}
+
+.dentistry__path .dentistry__description span {
+	display: block;
+	height: 0;
+	overflow: hidden;
+
+	font-size: 12px;
+	line-height: 18px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.15px;
+	color: #5a5a5a;
+
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 6;
+
+	transition: all 0.5s;
+}
+
+.dentistry__bg {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	height: 100%;
+	width: 250px;
+}
+
+.site .dentistry__bg img {
+	height: 100%;
+	object-fit: contain;
+	object-position: bottom;
+	width: 100%;
+}
+
+.dentistry__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.dentistry__path--left .dentistry__content {
+	align-items: flex-start;
+}
+
+.dentistry__path--right .dentistry__content {
+	align-items: flex-end;
+}
+
+.dentistry__path--left .dentistry__description {
+	lign-items: flex-start;
+}
+
+.dentistry__path--right .dentistry__description {
+	align-items: flex-end;
+}
+
+.dentistry__path.active {
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+	background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0.8) 100%
+		),
+		linear-gradient(
+			180deg,
+			rgba(233, 242, 242, 0.66) 0%,
+			rgba(253, 253, 253, 0.42) 100%,
+			rgba(253, 253, 253, 0.42) 100%
+		);
+	box-shadow: -2px -4px 4px 0px rgba(0, 0, 0, 0.1) inset,
+		2px 4px 4px 0px rgba(255, 255, 255, 0.3) inset;
+	filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
+}
+
+.dentistry__path.active .dentistry__mask {
+	opacity: 1;
+}
+
+.dentistry__path.active .dentistry__description span {
+	height: 110px;
+}
+
+.dentistry__path.active .dentistry__tab-more {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	/* Наше оборудование -- equipment */
+	.equipment {
+		padding: 275px 20px 50px 20px;
+		margin-top: 250px;
+	}
+
+	.equipment__wrapper {
+		margin-bottom: 40px;
+	}
+
+	.equipment__preview {
+		width: 500px;
+		height: 500px;
+
+		transform: translate(-50%, -250px);
+	}
+
+	.equipment__image {
+		width: 427px;
+		height: 427px;
+	}
+
+	/* О клинике -- about-clinic */
+	.about-clinic__desc {
+		margin-bottom: 20px;
+	}
+
+	.about-clinic__wrapper {
+		margin-bottom: 60px;
+	}
+
+	.about-clinic__desc-bottom {
+		font-size: 18px;
+	}
+
+	.dentistry {
+		height: 578px;
+	}
+
+	.dentistry__title {
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+
+	.dentistry__path {
+		padding: 25px 15px;
+	}
+
+	.dentistry__path .dentistry__description span {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.dentistry__bg {
+		width: auto;
+	}
+
+	.site .dentistry__bg img {
+		object-fit: cover;
+	}
+
+	.dentistry__path .dentistry__mask {
+		height: 71%;
+		top: 57%;
+	}
+}
+
+@media (min-width: 1000px) {
+	/* Наше оборудование -- equipment */
+	.equipment {
+		padding: 50px;
+		margin-top: 90px;
+	}
+
+	.equipment__wrapper {
+		align-items: flex-start;
+		margin-bottom: 50px;
+		max-width: 65%;
+	}
+
+	.equipment__carusel {
+		margin-right: -50px;
+	}
+
+	.equipment__preview {
+		width: 300px;
+		height: 300px;
+		right: 50px;
+		left: auto;
+
+		transform: translateY(-90px);
+	}
+
+	.equipment__description {
+		margin-bottom: 35px;
+	}
+
+	.equipment__image {
+		width: 256px;
+		height: 256px;
+	}
+
+	/* О клинике -- about-clinic */
+	.dentistry {
+		height: 664px;
+		border-radius: 30px;
+	}
+
+	.dentistry__path {
+		padding: 44px 52px;
+	}
+
+	.dentistry__title {
+		font-size: 52px;
+		font-weight: 300;
+		margin-bottom: 23px;
+	}
+
+	.dentistry__link {
+		padding: 10px 30px;
+	}
+
+	.dentistry__link.button span {
+		display: block;
+
+		color: #333438;
+
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.15px;
+	}
+
+	.dentistry__link .icon {
+		display: none;
+	}
+
+	.dentistry__description {
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		color: #5a5a5a;
+	}
+
+	.dentistry__tab-more {
+		display: none;
+	}
+
+	.dentistry__path .dentistry__description span {
+		font-size: 18px;
+		line-height: 27px;
+		font-weight: 400;
+	}
+}
+
+@media (max-width: 600px) {
+	.dentistry__description {
+		display: none !important;
+	}
+
+	.dentistry__content {
+		padding: 20px;
+	}
+}
+
+.stories {
+	display: none;
+}
+
+.section-site.section--hidden {
+	display: none;
+}
+
+.advantages__list {
+	width: 100%;
+	justify-content: space-between;
+}
+
+.advantages__item {
+	margin-left: 0;
+}
+
+.advantages__item:after {
+	content: '';
+}

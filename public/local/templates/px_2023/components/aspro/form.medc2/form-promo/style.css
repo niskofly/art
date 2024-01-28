@@ -1,0 +1,130 @@
+.promo__item{
+	display: flex;
+	border-radius: 15px;
+	border: 1px solid #FFF;
+	background: linear-gradient(180deg, rgba(233, 242, 242, 0.66) 0%, rgba(253, 253, 253, 0.42) 100%, rgba(253, 253, 253, 0.42) 100%), #FAFDFE;
+	box-shadow: 0px 6px 20px 0px rgba(202, 214, 228, 0.40);
+	margin-bottom: 40px;
+	padding: 30px;
+	color: #5A5A5A;
+}
+
+.card-promo__left{
+	width: fit-content;
+	margin-right: 25px;
+	flex-shrink: 0;
+}
+
+.card-promo__left img{
+		width: 264px !important;
+		height: 359px !important;
+		object-fit: cover;
+		border-radius: 15px;
+}
+
+
+.card-promo__title{
+	color: #000;
+	font-family: "Sansation";
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 36px; /* 120% */
+	letter-spacing: 1.15px;
+	margin-bottom: 20px;
+}
+
+
+.card-promo__center{
+	max-width: 486px;
+	margin-right: 25px;
+}
+
+
+.card-promo__decrtiption{
+	margin-bottom: 20px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 27px;
+}
+
+.card-promo__link{
+	padding: 0 !important;
+	color: #0AB6B6;
+}
+
+.card-promo__right{
+	max-width: 340px;
+	margin-left: auto;
+}
+
+.card-promo__right-column{
+	border-radius: 15px;
+	border: 3px solid #DAFFFB;
+	background: rgba(255, 255, 255, 0.80);
+	box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80);
+	padding: 20px;
+	text-align: center;
+}
+
+.card-promo__right-column .form-title{
+margin-bottom: 20px;
+}
+
+.card-promo__right-column .button--def{
+	width: 100%;
+	padding: 12px 0;
+	margin-bottom: 20px;
+}
+
+.card-promo__politics{
+	color: #A5A5A5;
+	font-weight: 300;
+}
+
+@media (max-width: 1430px) {
+
+
+	.promo__item{
+		flex-wrap: wrap;
+		padding: 20px;
+		flex-direction: column;
+	}
+
+	.card-promo__right-column{
+		border-radius: 15px;
+		border: 3px solid #DAFFFB;
+		background: rgba(255, 255, 255, 0.80);
+		box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80), 0px 2px 20px 0.2px rgba(165, 252, 243, 0.80);
+	}
+
+	.card-promo__right{
+		margin-left: auto;
+		margin-right: auto;
+		flex: 0 0 100%;
+		max-width: 600px;
+	}
+
+	.card-promo__center{
+		margin-bottom: 20px;
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.card-promo__left{
+		margin: 0 auto;
+		margin-bottom: 20px;
+		flex: 0 0 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.card-promo__link{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+}

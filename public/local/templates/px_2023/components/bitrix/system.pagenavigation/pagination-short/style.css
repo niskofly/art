@@ -1,0 +1,36 @@
+.pagination__item:first-of-type {
+	display: none;
+}
+
+.pagination__item:last-of-type {
+	display: none;
+}
+
+.pagination__item:after {
+	content: '';
+}
+
+.pagination__list {
+	display: flex;
+	justify-content: center;
+}
+
+.pagination__item {
+	color: #5A5A5A;
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+}
+
+.pagination__link{
+	color: #0AB6B6;
+	font-family: Roboto;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.15px;
+}

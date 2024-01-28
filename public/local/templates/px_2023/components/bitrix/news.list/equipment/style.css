@@ -1,0 +1,113 @@
+.card-equipment {
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 auto;
+
+	background: rgba(255, 255, 255, 0.50);
+}
+
+
+.slider__item {
+	display: flex;
+}
+
+.card-equipment__image {
+	display: block;
+	flex: 0 0 auto;
+	width: 90px;
+	height: 90px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80);
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+.card-equipment__name {
+	color: #000;
+	text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	margin-bottom: 20px;
+}
+
+.card-equipment__link {
+	padding: 9px 30px;
+	margin-top: auto;
+
+}
+
+.card-equipment__desc {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1 1 auto;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.equipment__carusel .owl-dots {
+	margin-top: 0;
+}
+
+.equipment__carusel .owl-carousel .owl-stage-outer {
+	padding: 20px 0 30px 0;
+	margin-right: -10px;
+}
+
+@media (min-width: 768px) {
+	.equipment__carusel .owl-carousel .owl-stage-outer {
+		padding-left: 8px;
+		margin-right: -20px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.card-equipment {
+		flex-direction: row-reverse;
+		gap: 10px;
+	}
+
+	.card-equipment__image {
+		margin: 0;
+	}
+
+	.card-equipment__name {
+		text-align: left;
+	}
+
+	.card-equipment__desc {
+		align-items: flex-start;
+	}
+
+
+	.equipment__carusel .owl-carousel .owl-stage-outer {
+		margin-right: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+@font-face {
+	font-weight: normal;
+	font-family: "fontello";
+	font-style: normal;
+	src: url("../font/fontello.eot?52644493");
+	src: url("../font/fontello.eot?52644493#iefix") format("embedded-opentype"),
+		url("../font/fontello.woff2?52644493") format("woff2"),
+		url("../font/fontello.woff?52644493") format("woff"),
+		url("../font/fontello.ttf?52644493") format("truetype"),
+		url("../font/fontello.svg?52644493#fontello") format("svg");
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?52644493#fontello') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: 0.2em;
+
+	font-weight: normal;
+	font-family: "fontello";
+	font-style: normal;
+	/* opacity: .8; */
+	/* For safety - reset parent styles, that can break glyph codes */
+	font-variant: normal;
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+	text-align: center;
+	text-transform: none;
+	text-decoration: inherit;
+	speak: never;
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-phone:before {
+	content: "\e800";
+}
+/* '' */
+.icon-location:before {
+	content: "\e801";
+}
+/* '' */
+.icon-emo-happy:before {
+	content: "\e802";
+}
+/* '' */
+.icon-emo-wink:before {
+	content: "\e803";
+}
+/* '' */
+.icon-emo-unhappy:before {
+	content: "\e804";
+}
+/* '' */
+.icon-emo-sleep:before {
+	content: "\e805";
+}
+/* '' */
+.icon-emo-thumbsup:before {
+	content: "\e806";
+}
+/* '' */
+.icon-emo-devil:before {
+	content: "\e807";
+}
+/* '' */
+.icon-emo-surprised:before {
+	content: "\e808";
+}
+/* '' */
+.icon-emo-tongue:before {
+	content: "\e809";
+}
+/* '' */
+.icon-emo-coffee:before {
+	content: "\e80a";
+}
+/* '' */
+.icon-emo-sunglasses:before {
+	content: "\e80b";
+}
+/* '' */
+.icon-emo-saint:before {
+	content: "\e810";
+}
+/* '' */
+.icon-emo-squint:before {
+	content: "\e811";
+}
+/* '' */
+.icon-emo-laugh:before {
+	content: "\e812";
+}
+/* '' */
+.icon-emo-wink2:before {
+	content: "\e813";
+}
+/* '' */
+.icon-spin4:before {
+	content: "\e834";
+}
+/* '' */
+.icon-spin5:before {
+	content: "\e838";
+}
+/* '' */
+.icon-spin6:before {
+	content: "\e839";
+}
+/* '' */
+.icon-crown:before {
+	content: "\e844";
+}
+/* '' */
+.icon-mail:before {
+	content: "\f0e0";
+}
+/* '' */
+.icon-facebook:before {
+	content: "\f09a";
+}
+/* '' */
+.icon-youtube:before {
+	content: "\f16a";
+}
+/* '' */
+.icon-instagram:before {
+	content: "\f16d";
+}
+/* '' */
+.icon-vkontakte:before {
+	content: "\f189";
+}
+/* '' */

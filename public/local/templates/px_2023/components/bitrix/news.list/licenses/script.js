@@ -1,0 +1,1 @@
+$((function(){$(".licenses.owl-container").find(".owl-carousel").owlCarousel({margin:0,loop:!0,nav:!1,dots:!0,smartSpeed:1e3,items:1,margin:20,responsive:{0:{items:2},768:{items:3,loop:!1,margin:30},1e3:{items:3,margin:60}}})}));

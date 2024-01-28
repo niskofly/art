@@ -1,0 +1,400 @@
+/* Так не делай!!! Ломается при включенной оптимизации Bitrix
+Пиши в header.php
+@import "../fonts/Nunito/style.css"; */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/* убираем нижний неконтролируемый отступ у не блочных картинок  */
+img {
+	vertical-align: bottom;
+}
+/* Исправление некоторых косяков возникающих при включении режима правки. Обнаружено на примере нашего OWL */
+div[id^="bx_incl_area_"] {
+	max-width: 100%;
+}
+
+:root {
+	--font-family: "Montserrat", sans-serif;
+	--corporate-color: #6c1b79;
+	--header-color: var(--corporate-color);
+	--accent-color: #ed1848;
+	--base-color: #454054;
+	--second-base-color: #14142b;
+	--disabled-color: #f6f4fa;
+	--white-color: #fff;
+	--date-color: #b1b1b1;
+}
+
+html,
+body {
+	/* height: 100%; */
+	margin: 0;
+}
+
+body {
+	background-color: var(--disabled-color);
+}
+
+.site {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	overflow-x: hidden;
+
+	color: var(--base-color);
+	font-weight: 400;
+	font-size: 17px;
+	font-family: var(--font-family);
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+.site__main {
+	flex-grow: 1;
+}
+/* нивелируем часто проставляемый Bitrix br при редактировании кода любой index.php */
+.site__main > br:last-child {
+	display: none;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.container--sm {
+	margin: 0 auto;
+}
+
+@media (min-width: 834px) {
+	.site {
+		font-size: 18px;
+	}
+
+	.container {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	.container--sm {
+		width: calc(((100% - (((25px * 8) / 6) - 25px)) / 8) * 6);
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		padding-right: 120px;
+		padding-left: 120px;
+	}
+
+	.container--sm {
+		width: calc(((100% - (((30px * 12) / 8) - 25px)) / 12) * 8);
+	}
+}
+
+@media (min-width: 1921px) {
+	.container {
+		max-width: 1680px;
+		/* MAIN SCREEN */
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.container--sm {
+		width: calc(((100% - (((30px * 12) / 6) - 25px)) / 12) * 6);
+	}
+}
+/* @media (min-width: 834px) {} */
+/* @media (min-width: 1440px) {} */
+/* @media (min-width: 1920px) {} */
+
+a {
+	text-decoration: none;
+}
+
+a.link {
+	color: var(--corporate-color);
+
+	transition: all 0.3s linear;
+}
+
+a.link:hover {
+	color: var(--accent-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: var(--corporate-color);
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 38px;
+	letter-spacing: -1.5px;
+}
+
+h2 {
+	color: var(--corporate-color);
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+@media (min-width: 375px) {
+	h1 {
+		font-size: 37px;
+	}
+}
+
+@media (min-width: 834px) {
+	h1 {
+		font-size: 50px;
+		line-height: 60px;
+		letter-spacing: -2px;
+	}
+
+	h2 {
+		font-size: 45px;
+		line-height: 55px;
+	}
+}
+
+@media (min-width: 1440px) {
+	h1 {
+		font-size: 70px;
+		line-height: 80px;
+	}
+
+	h2 {
+		font-size: 50px;
+		line-height: 60px;
+	}
+}
+
+@media (min-width: 1920px) {
+	h1 {
+		font-size: 70px;
+		line-height: 80px;
+	}
+}
+
+p {
+	margin: 0;
+	padding: 0;
+
+	line-height: 150%;
+}
+/* h1,
+.like-h1,
+h2,
+.like-h2 {
+	position: relative;
+
+	margin: 0;
+
+	font-weight: 300;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.3em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1,
+.like-h1 {
+	margin-bottom: 40px;
+
+	font-size: 50px;
+	line-height: 1.5em;
+}
+
+h2,
+.like-h2 {
+	margin-bottom: 40px;
+
+	font-weight: 500;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+h3,
+.like-h3 {
+	margin-bottom: 10px;
+
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 1.9em;
+	text-transform: uppercase;
+}
+
+h3.light {
+	color: #fff;
+}
+
+h4,
+.like-h4 {
+	margin-top: 50px;
+	margin-bottom: 5px;
+
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.9em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+h5,
+.like-h5 {
+	font-size: 10px;
+}
+
+@media (min-width: 768px) {
+	h1,
+	.like-h1 {
+		font-size: 55px;
+	}
+} */
+
+section,
+.like-section {
+	margin-bottom: 3em;
+}
+/* p {
+	line-height: 2em;
+	letter-spacing: 1.2px;
+	text-align: justify;
+} */
+
+dl {
+	padding: 0 15px 15px 15px;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+
+	line-height: 150%;
+	/* margin-top: 0;
+	margin-left: 0;
+	padding: 0 15px 10px 15px;
+	overflow: hidden; */
+
+	list-style: none;
+}
+
+ul li {
+	position: relative;
+
+	margin-bottom: 10px;
+
+	padding-left: 30px;
+}
+
+ul li:last-child {
+	margin-bottom: 0;
+}
+
+ul li::before {
+	position: absolute;
+	top: 11px;
+	left: 13px;
+
+	width: 4px;
+	height: 4px;
+
+	background-color: var(--base-color);
+	border-radius: 100%;
+
+	content: "";
+}
+
+ol {
+	list-style-type: none;
+
+	counter-reset: item;
+}
+
+ol li:before {
+	padding-right: 7px;
+
+	color: #243646;
+
+	content: counter(item) ". ";
+	counter-increment: item;
+}
+/* a {
+	color: #243646;
+	text-decoration: none;
+} */
+
+.no-link {
+	color: inherit;
+}
+
+table {
+	font-size: 16px;
+	line-height: 2em;
+}
+
+figcaption {
+	padding: 7px 24px;
+
+	font-style: italic;
+}
+
+.site img {
+	max-width: 100%;
+	height: auto;
+
+	vertical-align: middle;
+
+	border: none;
+	outline: none !important;
+}
+
+.block {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.block-pb {
+	padding-bottom: 50px;
+}
+
+@media (min-width: 834px) {
+	.block {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	.block-pb {
+		padding-bottom: 75px;
+	}
+}
+
+.mb-0 {
+	margin-bottom: 0 !important;
+}
+
+.pb-0 {
+	padding-bottom: 0 !important;
+}
+/* @media (min-width: 834px) {} */
+/* @media (min-width: 1440px) {} */
+/* @media (min-width: 1920px) {} */
+/* calc(((100% - (((30px * 12) / 5) - 30px)) / 12) * 5); */

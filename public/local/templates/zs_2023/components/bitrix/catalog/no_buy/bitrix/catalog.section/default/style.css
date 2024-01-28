@@ -1,0 +1,42 @@
+
+.catalog-section {
+    --tail-spasing: 20px;
+    --tail-spasing-compensation: -20px;
+    --block-spacing: 60px; /* Это должно быть в :root где ни будь в base.css отступ между блоками на странице */
+
+}
+.catalog-section__item {
+    padding-bottom: 40px;
+}
+.catalog-section__list {
+    margin-top: var(--block-spacing);
+}
+
+@media ( min-width: 600px ) {
+    .catalog-section__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: var(--tail-spasing-compensation) ;
+        margin-right: var(--tail-spasing-compensation) ;
+        margin-bottom: calc( var(--block-spacing) - var(--tail-spasing) ) ;
+        margin-left: var(--tail-spasing-compensation) ;
+    }
+    .catalog-section__item {
+        width: 50%;
+        padding: var(--tail-spasing);
+    }
+}
+
+@media ( min-width: 900px ) {
+    .catalog-section__item {
+        width: 33.33%;
+        padding: 20px;
+    }
+}
+
+@media ( min-width: 1150px ) {
+    .catalog-section__item {
+        width: 25%;
+        padding: 20px;
+    }
+}

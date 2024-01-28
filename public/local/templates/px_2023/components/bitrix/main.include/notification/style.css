@@ -1,0 +1,90 @@
+/* NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him. */
+
+.cookie-notification {
+	position: fixed;
+	background-color: #fff;
+	z-index: 10000000000;
+	width: 100%;
+	line-height: 1.2;
+	border: 1px solid #e4e4e4;
+	border-bottom: 3px solid #d41320;
+	padding: 8px 15px;
+	transition: bottom 1s;
+	font-family: "Manrope", sans-serif;
+	left: 0;
+	bottom: -100%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+@media (min-width: 550px) {
+	.cookie-notification {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: 650px;
+		bottom: -100px;
+		left: 15px;
+	}
+
+	.cookie-notification__text {
+		margin-bottom: 0;
+	}
+}
+
+.cookie-notification--show {
+	bottom: 15px;
+}
+
+.cookie-notification__text {
+	font-size: 13px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.cookie-notification__button {
+	flex-shrink: 0;
+	text-align: right;
+}
+
+.cookie-notification__text a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.cookie-notification .btn_all_articel {
+	padding: 0 15px;
+}
+
+.cookie-notification__close {
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	width: 22px;
+	height: 22px;
+	opacity: 0.3;
+	transition: opacity 0.5s;
+	cursor: pointer;
+}
+
+.cookie-notification__close:hover {
+	opacity: 1;
+}
+
+.cookie-notification__close:before,
+.cookie-notification__close:after {
+	position: absolute;
+	left: 10px;
+	content: " ";
+	height: 23px;
+	width: 2px;
+	background-color: #333;
+}
+
+.cookie-notification__close:before {
+	transform: rotate(45deg);
+}
+
+.cookie-notification__close:after {
+	transform: rotate(-45deg);
+}

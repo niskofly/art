@@ -1,0 +1,37 @@
+.form-container {
+	text-align: left;
+	min-height: 350px;
+}
+
+.form-required {
+	color: red;
+}
+
+.message {
+	display: none;
+	font-size: 18px;
+	text-align: center;
+	line-height: 2em;
+}
+
+.message > div {
+	border: 7px solid #7A983D;
+	padding: 44px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.message .success {
+	border-color: #7A983D;
+}
+
+.message .warning {
+	border-color: red;
+}
+
+.form-body {
+	padding: 0 30px 50px;
+}

@@ -1,0 +1,8 @@
+/* Тут только минимально необходимые для функционирования стили */
+[data-filter-selector] {
+	cursor: pointer;
+}
+
+[data-filter-item] {
+	display: none;
+}

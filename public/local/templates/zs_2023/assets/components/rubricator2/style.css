@@ -1,0 +1,15 @@
+.rubricator__input-block {
+	text-align: center;
+}
+
+.rubricator__input {
+	width: 24%;
+	min-width: 260px;
+	padding: 8px 20px;
+
+	font-size: 23px;
+	line-height: 1;
+
+	border: 1px solid black;
+	border-radius: 23px;
+}

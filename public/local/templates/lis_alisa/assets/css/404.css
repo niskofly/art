@@ -1,0 +1,26 @@
+/* .page-404 {} */
+.page-404__title {
+	margin-bottom: 20px;
+}
+
+.page-404__desc--bold {
+	margin-bottom: 10px;
+
+	color: #454054;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+.page-404__desc {
+	margin-bottom: 30px;
+}
+/* .page-404__btn {} */
+
+@media (min-width: 834px) {
+	.page-404__title {
+		margin-bottom: 30px;
+	}
+}
+/* @media (min-width: 1440px) {} */
+/* @media (min-width: 1920px) {} */

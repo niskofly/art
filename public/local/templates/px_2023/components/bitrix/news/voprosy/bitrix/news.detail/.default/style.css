@@ -1,0 +1,98 @@
+div.news-detail
+{
+	word-wrap: break-word;
+}
+div.news-detail img.detail_picture
+{
+	float:left;
+	margin:0 8px 6px 1px;
+}
+.news-date-time
+{
+	color:#486DAA;
+}
+
+a.vopros__title{
+	font-family: Sansation;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 24px; /* 120% */
+	letter-spacing: 0.15px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #A5A5A5;
+	margin-bottom: 20px;
+	display: block;
+	color: #5A5A5A;
+}
+
+.vopros__name{
+	margin-left: 30px;
+	margin-bottom: 20px;
+	font-family: Sansation;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21.6px;
+	position: relative;
+}
+
+.vopros__name:before{
+	content: url("./img/ask.svg");
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: -4px;
+	left: -35px;
+}
+
+.otvet__name{
+	margin-left: 30px;
+	margin-bottom: 20px;
+	font-family: Sansation;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 21.6px;
+	position: relative;
+}
+
+.otvet__name:before{
+	content: url("./img/ask.svg");
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	top: -4px;
+	left: -35px;
+}
+
+.vopros__value{
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+
+.otvet__value{
+	font-family: Roboto;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 27px;
+}
+
+@media (max-width: 650px) {
+	.vopros-sections{
+		flex-wrap: nowrap;
+		overflow: auto;
+		padding-bottom: 20px;
+	}
+
+
+
+	.vopros-sections::-webkit-scrollbar {
+		display: none;
+	}
+}

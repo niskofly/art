@@ -1,0 +1,49 @@
+.price__item {
+	padding: 10px 15px;
+
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.price__item:nth-child(odd) {
+	background-color: #f4f4f4;
+}
+
+.price__name {
+	margin-bottom: 4px;
+}
+
+.price__summ {
+	flex-shrink: 0;
+	width: 300px;
+	max-width: 100%;
+	margin: 0 0 0 auto;
+
+	white-space: nowrap;
+	text-align: end;
+}
+
+.price__summ--variants {
+	display: flex;
+	justify-content: space-between;
+}
+
+.price__variant-name {
+	font-size: 12px;
+	text-align: center;
+}
+
+.price__variant-value {
+}
+
+@media (min-width: 768px) {
+	.price__item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.price__summ {
+		margin-left: 35px;
+	}
+}

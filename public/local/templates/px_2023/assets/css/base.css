@@ -1,0 +1,324 @@
+/* Так не делай!!! Ломается при включенной оптимизации битрикса
+Пиши в header.php
+@import "../fonts/Nunito/style.css"; */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* убираем нижний неконтролируемый отступ у не блочных картинок  */
+img {
+	vertical-align: bottom;
+}
+
+/* Исправление некоторых косяков возникающих при включении режима правки. Обнаружено на примере нашего OWL */
+div[id^='bx_incl_area_'] {
+	max-width: 100%;
+}
+
+:root {
+	--headers-font-family: 'Sansation', sans-serif;
+	--font-family: 'Roboto', sans-serif;
+	--block-spacing: 60px;
+	--color-main: #0ab6b6;
+	--color-accent: #ff5e84;
+	--color-dark: #333438;
+	--color-dark-gray: #5a5a5a;
+	--color-gray: #a5a5a5;
+	--color-light: #cdcdcd;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(
+			180deg,
+			rgba(230, 230, 230, 0.6) 14.34%,
+			#e8ecf1 58.74%,
+			rgba(230, 230, 230, 0) 100%
+		),
+		linear-gradient(180deg, #d3d7dc 0%, rgba(230, 230, 230, 0.2) 12.12%), #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body.hidden {
+	touch-action: none;
+	-ms-touch-action: none;
+	overflow: hidden;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.site {
+	color: #5a5a5a;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.site__main {
+	flex-grow: 1;
+}
+
+/* нивелируем часто проставляемый битриксом br при редактировании кода любой index.php */
+.site__main > br:last-child {
+	display: none;
+}
+
+.section-site {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1240px; /* MAIN SCREEN */
+	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.section--hidden {
+	overflow: hidden;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	.section-site {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+h1,
+.like-h1,
+h2,
+.like-h2 {
+	font-family: 'Sansation', sans-serif;
+	line-height: 1.3em;
+	text-align: center;
+	margin: 0;
+	font-weight: 300;
+	text-transform: uppercase;
+	position: relative;
+}
+
+h1,
+.like-h1 {
+	font-family: 'Sansation', sans-serif;
+	font-size: 50px;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+}
+
+h2,
+.like-h2 {
+	font-family: 'Sansation', sans-serif;
+	font-size: 35px;
+	margin-bottom: 40px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+h3,
+.like-h3 {
+	font-family: 'Sansation', sans-serif;
+	font-size: 25px;
+	margin-bottom: 10px;
+	line-height: 1.9em;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.title {
+	font-family: 'Sansation', sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	letter-spacing: 0.15px;
+	text-align: center;
+	text-transform: initial;
+	color: var(--color-main);
+}
+
+.section__title {
+	margin-bottom: 30px;
+}
+
+dl {
+	padding: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin-left: 0;
+	overflow: hidden;
+	margin-top: 0;
+	list-style: none;
+}
+
+ol {
+	list-style-type: none;
+	counter-reset: item;
+}
+
+ol li:before {
+	content: counter(item) '. ';
+	counter-increment: item;
+	color: #243646;
+	padding-right: 7px;
+}
+
+a {
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.no-link {
+	color: inherit;
+}
+
+table {
+	font-size: 16px;
+	line-height: 2em;
+}
+
+figcaption {
+	padding: 7px 24px;
+	font-style: italic;
+}
+
+.site img {
+	max-width: 100%;
+	height: auto;
+	border: none;
+	vertical-align: middle;
+	outline: none !important;
+}
+
+p {
+	margin: 0;
+}
+
+.section-site__title {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+	h1,
+	.like-h1 {
+		font-size: 55px;
+	}
+
+	.title {
+		font-size: 52px;
+		font-weight: 300;
+	}
+
+	.section-site__title {
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: 1000px) {
+	h1,
+	.like-h1 {
+		font-size: 64px;
+	}
+
+	h2,
+	.like-h2 {
+		font-size: 52px;
+	}
+
+	h3,
+	.like-h3 {
+		font-size: 30px;
+	}
+
+	.section-site {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.section-site__title {
+		margin-bottom: 60px;
+	}
+}
+
+/* Прелоадер */
+
+.loading-page {
+	background: #e8ecf1 58.74%;
+	z-index: 999999;
+	height: 100vh;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: all 0.6s linear;
+}
+
+.loading-page .counter {
+	text-align: center;
+	transition: 0.3s;
+}
+
+.loading-page .counter p {
+	font-size: 40px;
+	font-weight: 100;
+	color: var(--color-main);
+	font-family: 'Sansation', sans-serif;
+}
+
+.loading-page .counter h1 {
+	color: white;
+	font-size: 60px;
+	margin-top: -10px;
+}
+
+.loading-page .counter hr {
+	background: var(--color-main);
+	border: none;
+	height: 1px;
+}
+
+.loading-page .counter {
+	position: relative;
+	width: 200px;
+}
+
+.loading-page .counter h1.abs {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.loading-page .counter .color {
+	width: 0px;
+	overflow: hidden;
+	color: var(--color-main);
+}

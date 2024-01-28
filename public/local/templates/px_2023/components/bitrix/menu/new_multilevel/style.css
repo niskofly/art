@@ -1,0 +1,113 @@
+.new-multilevel__item {
+	width: 285px;
+}
+
+.new-multilevel__link {
+	color: #5A5A5A;
+	font-weight: 700;
+	transition: 0.3s;
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	width: 100%;
+	width: 245px;
+	line-height: 24px;
+	margin-bottom: 10px;
+
+}
+
+.new-multilevel__link span{
+	height: fit-content;
+	white-space: break-spaces;
+	width: 215px;
+}
+
+.menu-left__arrow{
+	height: fit-content;
+	width: fit-content;
+	cursor: pointer;
+}
+
+.with-sidebar__sidebar-menu > .new-multilevel > .new-multilevel__item{
+
+	padding: 15px 20px;
+	border-radius: 15px;
+
+
+}
+
+
+.with-sidebar__sidebar-menu > .new-multilevel > .new-multilevel__item.active{
+	background: linear-gradient(180deg, rgba(233, 242, 242, 0.66) 0%, rgba(253, 253, 253, 0.42) 100%, rgba(253, 253, 253, 0.42) 100%);
+	box-shadow: 0px 6px 20px 0px rgba(202, 214, 228, 0.40);
+	backdrop-filter: blur(10px);
+	border: 1px solid #FFF;
+}
+
+
+.new-multilevel__item__wrapper{
+	display: flex;
+	justify-content: space-between;
+	width: 245px;
+}
+
+
+.multilevel-nav__item--first-parent .new-multilevel__link, .multilevel-nav__item--first .new-multilevel__link{
+ font-weight: 700;
+}
+
+
+.multilevel-nav__item--second-parent .new-multilevel__link, .multilevel-nav__item--second .new-multilevel__link{
+	font-weight: 400;
+}
+
+
+.multilevel-nav__item--third-parent .new-multilevel__link, .multilevel-nav__item--third .new-multilevel__link{
+	font-weight: 300;
+}
+
+
+.multilevel-nav__item--first .menu-left__arrow, .multilevel-nav__item--second .menu-left__arrow, .multilevel-nav__item--third .menu-left__arrow{
+	display: none;
+}
+
+.new-multilevel__sublevel{
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.new-multilevel__sublevel.active{
+	max-height: fit-content;
+}
+
+.multilevel-nav__item--first-parent.active > .new-multilevel__item__wrapper > .new-multilevel__link{
+	color: #0AB6B6;
+}
+
+.multilevel-nav__item--first-parent.active > .new-multilevel__item__wrapper > .menu-left__arrow{
+	transform: rotate(90deg);
+	position: relative;
+	top: 2px;
+}
+
+.multilevel-nav__item--first-parent.active > .new-multilevel__item__wrapper > .menu-left__arrow path{
+	fill: #0AB6B6 !important;
+
+}
+
+
+.multilevel-nav__item--second-parent.active > .new-multilevel__item__wrapper > .new-multilevel__link{
+	color: #0AB6B6;
+}
+
+.multilevel-nav__item--second-parent.active > .new-multilevel__item__wrapper > .menu-left__arrow{
+	transform: rotate(90deg);
+	position: relative;
+	top: 2px;
+}
+
+.multilevel-nav__item--second-parent.active > .new-multilevel__item__wrapper > .menu-left__arrow path{
+	fill: #0AB6B6 !important;
+
+}

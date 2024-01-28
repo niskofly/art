@@ -1,0 +1,37 @@
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 35px;
+	border: none;
+	cursor: pointer;
+	background: #04d2d7;
+	border-radius: 5px;
+	color: white;
+	font-weight: 300;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	transition: background-color 0.3s;
+	box-shadow: 0 11px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.button:focus {
+	transform: translateY(3px);
+	box-shadow: 0 7px 11px -3px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+	transform: translateY(3px);
+	box-shadow: 0 7px 11px -3px rgba(0, 0, 0, 0.2);
+}
+
+.button__icon {
+	height: 21px;
+	margin-right: 12px;
+}
+
+.button.button--alt {
+	background: #eec01d;
+}

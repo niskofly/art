@@ -1,0 +1,78 @@
+/* NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him. */
+
+#headerfixed .logo-row .logo img,
+#headerfixed .logo-row .logo svg {
+	width: auto;
+}
+
+.bottom-under .f {
+	height: 65px;
+	line-height: 65px;
+}
+
+.bottom-under .f .copy {
+	line-height: 50%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.banners_with_holiday_programs {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.menu_top_block.catalog_block .dropdown > li.full > .dropdown > li > .image,
+header .menu_top_block.catalogfirst li.full > .dropdown > li > .image {
+	display: none;
+}
+
+.menu_top_block.catalog_block
+	.dropdown
+	> li.full
+	> .dropdown
+	> li
+	> .image
+	+ a {
+	padding: 0;
+}
+
+.cookie-notification {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.8);
+	bottom: 0;
+	width: 100%;
+	color: white;
+	padding: 15px;
+	z-index: 10000;
+	max-height: 100vh;
+	overflow: auto;
+}
+
+.cookie-notification_hidden_yes {
+	display: none;
+}
+
+.cookie-notification__header {
+	margin-bottom: 10px;
+	font-size: 23px;
+}
+
+.cookie-notification__body {
+	margin-bottom: 10px;
+}
+
+.cookie-notification__buttons {
+	margin-bottom: 20px;
+}
+
+.cookie-notification__button {
+	padding: 5px 19px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.cookie-notification__button--reject {
+	border: 1px solid #fff;
+	background-color: #000;
+	color: #fff;
+}

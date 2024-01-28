@@ -1,0 +1,34 @@
+<?
+
+if($arParams["SHOW_IMAGE"] == "Y"){
+			foreach ($arResult["CATEGORIES"] as $category => &$items){
+				if (empty($items))
+					continue;
+                foreach ($items as &$item){
+                    if(!$item['PICTURE_SRC']){
+                        $db_props = CIBlockElement::GetByID($item['PRODUCT_ID']);
+                        $el = $db_props->GetNextElement(); 
+                        if($ar_props = $el->GetFields()){
+                            //echo "<pre>";print_r($ar_props);
+                            if (isset($ar_props["PREVIEW_PICTURE"]) && intval($ar_props["PREVIEW_PICTURE"]) > 0)
+                                $arImage = CFile::GetFileArray($ar_props["PREVIEW_PICTURE"]);
+                            elseif (isset($ar_props["DETAIL_PICTURE"]) && intval($ar_props["DETAIL_PICTURE"]) > 0)
+                                $arImage = CFile::GetFileArray($ar_props["DETAIL_PICTURE"]);
+                            if ($arImage)
+                            {
+                                $arFileTmp = CFile::ResizeImageGet(
+                                    $arImage,
+                                    array("width" => "100", "height" =>"100"),
+                                    BX_RESIZE_IMAGE_PROPORTIONAL,
+                                    true
+                                );
+                                $item["PICTURE_SRC"] = $arFileTmp["src"];
+                            }
+                        }
+                    }
+					$item['DETAIL_PAGE_URL'] = $ar_props['DETAIL_PAGE_URL'];
+                }
+            }
+			
+}
+?>

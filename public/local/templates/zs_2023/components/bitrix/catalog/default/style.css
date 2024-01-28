@@ -1,0 +1,135 @@
+/* .catalog-section {} */
+.catalog-section__filter {
+  width: 100%;
+}
+
+.catalog-section__content {
+  width: 100%;
+}
+
+.sort-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 14px;
+
+  background: var(--color-corporate);
+  border-radius: 30px;
+  cursor: pointer;
+
+  transition: all 0.3s linear;
+}
+
+.sort-btn:hover {
+  background-color: var(--color-corporate-hover);
+}
+
+.sort-btn span {
+  margin-right: 5px;
+}
+
+.sort-btn svg {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+}
+/* .sort-btn--order-desc {} */
+
+.sort-btn--order-asc svg {
+  transform: rotateX(180deg);
+}
+
+.catalog-section__main {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.catalog-section__recommendations {
+  padding-bottom: 0 !important;
+}
+
+.catalog-section__recommendations-title {
+  margin-bottom: 30px;
+
+  color: var(--color-corporate);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.catalog-element__block--small {
+  max-width: 1110px;
+}
+
+.block-border-bottom {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+@media (min-width: 1280px) {
+  .catalog-section {
+    display: flex;
+  }
+
+  .catalog-section__filter {
+    width: 280px;
+    margin-right: 5px;
+    padding-bottom: 0 !important;
+  }
+
+  .catalog-section__content {
+    flex: 1;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .catalog-section__main {
+    padding-top: 0 !important;
+  }
+
+  .sort-filter {
+    gap: 15px;
+  }
+
+  .catalog-section__main .catalog-section__item {
+    width: 33.33%;
+  }
+
+  .catalog-section__recommendations-title {
+    text-align: left;
+  }
+
+  .catalog-section__recommendations .catalog-section__item {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1520px) {
+  .catalog-section__main .catalog-section__item {
+    width: 25%;
+  }
+
+  .catalog-section__recommendations .catalog-section__item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .catalog-section__filter {
+    width: 398px;
+  }
+
+  .catalog-element__block--small .catalog-section__item {
+    width: 25%;
+  }
+}
+/* calc(36px + (45 - 36) * (100vw - 993px) / (1920 - 993)); */
+/* calc(((100% - (((30px * 12) / 5) - 30px)) / 12) * 5); */

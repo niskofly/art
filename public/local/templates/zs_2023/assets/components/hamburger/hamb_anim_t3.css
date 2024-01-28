@@ -1,0 +1,96 @@
+.hamburger-t3 {
+	cursor: pointer;
+	width: 34px;
+	position: relative;
+}
+
+.hamburger-t3__line,
+.hamburger-t3:before,
+.hamburger-t3:after {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.hamburger-t3:before,
+.hamburger-t3__line:before,
+.hamburger-t3__line:after,
+.hamburger-t3:after {
+	display: block;
+	content: "";
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: var(--contrast-color);
+}
+
+.hamburger-t3__line:before,
+.hamburger-t3__line:after {
+	transition: all 0.3s ease-in-out;
+}
+
+.hamburger-t3__line:after {
+	margin-top: -2px;
+}
+
+.hamburger-t3:before,
+.hamburger-t3__line {
+	margin-bottom: 7px;
+}
+
+.hamburger-t3__line {
+	width: 23px;
+}
+
+.hamburger-t3:after {
+	width: 15px;
+}
+
+.active .hamburger-t3:before,
+.active .hamburger-t3:after {
+	visibility: hidden;
+}
+
+.active .hamburger-t3__line {
+	width: auto;
+}
+
+.active .hamburger-t3__line:before,
+.active .hamburger-t3__line:after {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: var(--contrast-color);
+}
+
+.active .hamburger-t3__line:after {
+	border-top-width: 2px;
+}
+
+.active .hamburger-t3__line:before {
+	transform: rotate(45deg);
+}
+
+.active .hamburger-t3__line:after {
+	transform: rotate(-45deg);
+}
+
+.hamburger-t3--rotate {
+	transform: rotate(180deg);
+}
+/* .hamburger-t3.active:after, */
+/* .active .hamburger-t3:after, */
+/* .hamburger-t3.active:before, */
+/* .active .hamburger-t3:before */
+/* { */
+/*	width: 28px; */
+/* } */
+/* .hamburger-t3.active:after { */
+/*	margin-top: 14px; */
+/*	transform: translateY(-11px) rotate(-45deg); */
+/* } */
+/* .hamburger-t3.active:before { */
+/*	transform: translateY(5px) rotate(45deg); */
+/* } */
+/* .hamburger-t3--revert { */
+/*	transform: rotate( */
+/*			180deg */
+/*	); */
+/* } */

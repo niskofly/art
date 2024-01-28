@@ -1,0 +1,34 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    //    "es2022": true,
+    //    "amd": true,
+    "jquery": true,
+    "node": true
+  },
+  "globals": {
+    "jquery": true,
+    "window": true
+    //    "$": true
+    //      module: true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "prettier"
+    //    "google"
+  ],
+  "plugins": [
+    //    "typescript"
+    "jquery"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "camelcase": "off",
+    "no-console": "off"
+  }
+}

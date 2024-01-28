@@ -1,0 +1,56 @@
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.owl-dots {
+	text-align: center;
+}
+
+.owl-dots .owl-dot span {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	margin: 10px;
+
+	background-color: #ccc;
+	border-radius: 50%;
+}
+
+.owl_element {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	overflow: hidden;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.owl-stage {
+	display: flex;
+}
+
+.owl_header {
+	padding: 10px 0;
+
+	font-size: 16px;
+	text-align: center;
+
+	background: #fafafa;
+}
+
+.owl-item.active {
+	background-color: transparent;
+	border: #ccc;
+}

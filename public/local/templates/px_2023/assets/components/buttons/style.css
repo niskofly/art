@@ -1,0 +1,161 @@
+/* button start */
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0.15px;
+	color: var(--color-dark);
+
+	white-space: nowrap;
+	text-decoration: none;
+
+	outline: none;
+	cursor: pointer;
+
+	transition: all 0.3s linear;
+	border-radius: 30px;
+}
+
+/* btn type 1 -- default */
+.button--def  {
+	background: linear-gradient(155deg, #A0FFF9 9.93%, #36DAD0 91.08%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+.button--def:hover {
+	background: radial-gradient(50% 50% at 50% 50%, #00EBD4 0%, #7CFCEF 100%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+.button--def:active {
+	background: #36DAD0;
+	box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.20), -4px -4px 12px 2px rgba(255, 255, 255, 0.95), 6px 6px 8px 0px rgba(0, 0, 0, 0.20) inset, -6px -6px 8px 0px rgba(160, 255, 249, 0.80) inset;
+}
+.button--def.disable {
+	color: var(--color-gray);
+	background: linear-gradient(155deg, #D3FBF8 9.93%, #B2D9D6 91.08%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+
+
+/* btn type 2 -- light */
+.button--light {
+	background: linear-gradient(180deg, #FDFCFC 0%, #F2F2F2 100%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80), -3px -3px 3px 0px rgba(191, 191, 191, 0.15) inset;
+	border: 1px solid transparent;
+}
+.button--light:hover {
+	background: linear-gradient(180deg, #FDFCFC 0%, #F2F2F2 100%);
+	box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.20), -2px -2px 8px 0px rgba(255, 255, 255, 0.80), -3px -3px 3px 0px rgba(191, 191, 191, 0.15) inset;
+}
+.button--light:active {
+	border: 1px solid rgba(255, 255, 255, 0.20);
+	background: #EEE;
+	box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20) inset, -6px -6px 16px 0px rgba(255, 255, 255, 0.80) inset, 4px 4px 12px 2px rgba(0, 0, 0, 0.20), -4px -4px 12px 2px rgba(255, 255, 255, 0.95);
+}
+.button--light.disable {
+	color: var(--color-gray);
+	background: linear-gradient(180deg, #F4F0F0 0%, #CFCDCD 100%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80), -3px -3px 3px 0px rgba(191, 191, 191, 0.15) inset;
+}
+
+
+/* btn type 3 -- neon-main */
+
+.button--neo-1 {
+	background: linear-gradient(180deg, #BFFFF7 0%, #0DFFE1 100%), #BFFFF7;
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+.button--neo-1:hover {
+	background: radial-gradient(50% 50% at 50% 50%, #00EBD4 0%, #7CFCEF 100%);
+	box-shadow: 4px 4px 10px 0px rgba(42, 214, 214, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80), 0px 0px 10px 4px rgba(98, 255, 240, 0.60);
+}
+.button--neo-1:active {
+	background: linear-gradient(180deg, #BFFFF7 0%, #0DFFE1 100%);
+	box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.20) inset, -6px -6px 8px 0px rgba(160, 255, 249, 0.80) inset, 4px 4px 12px 2px rgba(0, 0, 0, 0.20), -4px -4px 12px 2px rgba(255, 255, 255, 0.95);
+}
+.button--neo-1.disable {
+	color: var(--color-gray);
+	background: linear-gradient(155deg, #D3FBF8 9.93%, #B2D9D6 91.08%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+
+
+/* btn type 4 -- neon-accent */
+
+.button--neo-2 {
+	background: linear-gradient(241deg, #FF8EED -3.08%, #FF9DA9 71.62%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+.button--neo-2:hover {
+	background: linear-gradient(241deg, #FEAAF0 -3.08%, #FFADB7 71.62%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80), 0px 0px 10px 4px rgba(255, 142, 237, 0.60);
+}
+.button--neo-2:active {
+	border: 1px solid rgba(255, 217, 249, 0.20);
+	background: linear-gradient(241deg, #FF8EED -3.08%, #FF9DA9 71.62%);
+	box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.20) inset, -6px -6px 8px 0px rgba(255, 198, 205, 0.80) inset, 4px 4px 12px 2px rgba(0, 0, 0, 0.20), -4px -4px 12px 2px rgba(255, 255, 255, 0.95);
+}
+.button--neo-2.disable {
+	color: var(--color-gray);
+	background: linear-gradient(241deg, #FFDAF9 -3.08%, #EBD5D8 71.62%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+}
+
+
+.button span {
+	color: var(--white-color);
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+
+.button .load-svg {
+	display: none;
+	width: 20px;
+	height: 20px;
+
+	transition: all 0.3s linear;
+}
+
+.button.loading span {
+	display: none;
+}
+
+.button.loading .load-svg {
+	display: block;
+	animation: btnLoading 2s infinite linear;
+}
+
+.button--no-style {
+	background-color: transparent;
+	color: var(--color-dark);
+	padding: 0;
+	border: none;
+}
+
+.button--no-style:active {
+	color: var(--color-main);
+}
+
+@keyframes btnLoading {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width: 1000px) {
+	.button--no-style:hover {
+		color: var(--color-main);
+	}
+}
+
+

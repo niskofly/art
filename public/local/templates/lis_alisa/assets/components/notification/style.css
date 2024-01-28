@@ -1,0 +1,80 @@
+/* NOTE: This file is intended for programmers. Aspro technical support is not advised to work with him. */
+
+#headerfixed .logo-row .logo img,
+#headerfixed .logo-row .logo svg {
+	width: auto;
+}
+
+.bottom-under .f {
+	height: 65px;
+
+	line-height: 65px;
+}
+
+.bottom-under .f .copy {
+	display: inline-block;
+
+	line-height: 50%;
+	vertical-align: middle;
+}
+
+.menu_top_block.catalog_block .dropdown > li.full > .dropdown > li > .image,
+header .menu_top_block.catalogfirst li.full > .dropdown > li > .image {
+	display: none;
+}
+
+.menu_top_block.catalog_block
+	.dropdown
+	> li.full
+	> .dropdown
+	> li
+	> .image
+	+ a {
+	padding: 0;
+}
+
+.cookie-notification {
+	position: fixed;
+	bottom: 0;
+	z-index: 10000;
+
+	width: 100%;
+	max-height: 100vh;
+	padding: 15px;
+	overflow: auto;
+
+	color: white;
+
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cookie-notification_hidden_yes {
+	display: none;
+}
+
+.cookie-notification__header {
+	margin-bottom: 10px;
+
+	font-size: 23px;
+}
+
+.cookie-notification__body {
+	margin-bottom: 10px;
+}
+
+.cookie-notification__buttons {
+	margin-bottom: 20px;
+}
+
+.cookie-notification__button {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 5px 19px;
+}
+
+.cookie-notification__button--reject {
+	color: #fff;
+
+	background-color: #000;
+	border: 1px solid #fff;
+}

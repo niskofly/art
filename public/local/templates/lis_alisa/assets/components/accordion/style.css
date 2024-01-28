@@ -1,0 +1,32 @@
+.accordion__wrapp-hide {
+	height: 0;
+	overflow: hidden;
+
+	transition: height 0.3s;
+}
+
+.accordion__wrapp-hide.accordion-off {
+	height: auto;
+}
+
+.accordion__buttons {
+	display: none;
+}
+
+.accordion__button {
+	display: inline-block;
+
+	cursor: pointer;
+}
+
+.accordion__button.accordion__button--hide {
+	display: none;
+}
+
+.accordion--open .accordion__button.accordion__button--hide {
+	display: inline-block;
+}
+
+.accordion--open .accordion__button.accordion__button--show {
+	display: none;
+}

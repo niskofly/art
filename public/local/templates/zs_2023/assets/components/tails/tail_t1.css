@@ -1,0 +1,36 @@
+.tail-t1 {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	/* background-size: auto 100%; */
+	/* transition: background-size 0.3s; */
+}
+
+.tail-t1:hover .filter {
+	opacity: 0;
+}
+
+.tail-t1__content {
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+	padding: 14px 24px;
+	justify-content: space-between;
+}
+
+.tail-t1__title {
+	font-size: 22px;
+	line-height: 35px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: left;
+}
+
+.tail-t1__arrow {
+	width: 28px;
+	height: 2em;
+}

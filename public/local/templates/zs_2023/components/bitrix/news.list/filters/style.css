@@ -1,0 +1,246 @@
+.block_filter input,
+.block_filter select
+{
+    padding: 6px 5px;
+    border-radius: 13px;
+    border: 2px solid #607DA8;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+.block_filter select {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.block_filter__name {
+    display: block;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 11px;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+.block_filter__name:after {
+    font-family: "fontello";
+    content: "\e80e";
+    transform-origin: center;
+    text-align: center;
+    margin-left: 10px;
+    transition: all .3s;
+}
+
+[data_order=ASC] .block_filter__name:after {
+    display: inline-block;
+    transform: scale(1, -1);
+    transition: all .3s;
+}
+.sort .block_filter__name::before {
+    color: #000;
+}
+.sort[data_order="ASC"] .block_filter__name::before {
+    transform: rotate(180deg);
+}
+/*start свойства фильтра*/
+.registry-members__properties{
+    background-color: #ACBBD2;
+    margin-bottom: 40px;
+}
+/*end*/
+.registry-members .table__row {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.registry-members .table__col {
+    position: relative;
+    padding: 8px 20px 15px;
+    text-align: left;
+}
+
+.registry-members__item.table__row {
+    padding-bottom: 4px;
+}
+
+.registry-members__value {
+    white-space: nowrap;
+}
+.registry-members__fullname .registry-members__value {
+    white-space: normal;
+}
+
+@media ( min-width: 650px ) {
+
+    .registry-members .table__row {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .registry-members__regnumber {
+        width: 25%;
+    }
+
+    .registry-members__props {
+        width: 75%;
+    }
+    .registry-members__props  .table__col {
+        width: 33.33%;
+    }
+
+    .registry-members__props {
+        display: flex;
+        order: 2;
+    }
+    .registry-members__fullname {
+        flex-grow: 1;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+}
+
+@media ( min-width: 1150px ) {
+    .registry-members .table__row {
+        flex-wrap: nowrap;
+    }
+    .registry-members__props {
+        width: auto;
+    }
+    .table__col {
+        order: 2;
+    }
+    .registry-members__fullname {
+        width: auto;
+        flex-grow: 1;
+    }
+    .registry-members__regnumber {
+        order: 1;
+    }
+    .registry-members__regnumber {
+        width: 160px;
+    }
+    .registry-members__props .registry-members__legalstatus {
+        width: 190px;
+    }
+    .registry-members__props .registry-members__status {
+        width: 230px;
+    }
+    .registry-members__props .registry-members__inn {
+        width: 170px;
+    }
+
+    .registry-members__fullname {
+        width: calc(100% - 160px - 190px - 230px - 170px);
+    }
+}
+
+
+.registry-members__list .registry-members__regnumber:before,
+.registry-members__list .registry-members__inn:before,
+.registry-members__list .registry-members__status:before,
+.registry-members__list .registry-members__legalstatus:before
+{
+    white-space: nowrap;
+    color: #b3b3b3;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+}
+@media ( min-width: 1150px ) {
+	.registry-members__list .registry-members__regnumber:before,
+	.registry-members__list .registry-members__inn:before,
+	.registry-members__list .registry-members__status:before,
+	.registry-members__list .registry-members__legalstatus:before {
+			display:none;
+	}
+}
+
+
+
+
+.registry-members__list .registry-members__regnumber:before {
+    content: "Рег. номер: ";
+}
+.registry-members__list .registry-members__inn:before {
+    content: "ИНН: ";
+}
+.registry-members__list .registry-members__status:before {
+    content: "Статус Члена СРО: ";
+}
+.registry-members__list .registry-members__legalstatus:before {
+    content: "Статус права: ";
+}
+
+@media ( min-width: 1500px ) {
+    /*.table__item {*/
+    /*    flex-wrap: nowrap;*/
+    /*}*/
+
+    /*.table__col {*/
+    /*    order: 1;*/
+    /*}*/
+    /*.table__col--regnumber {*/
+    /*    order: 0;*/
+    /*}*/
+
+}
+
+
+
+/*@media ( min-width: 1150px ) {*/
+/*    .registry-members__regnumber,*/
+/*    .group1_registration_number*/
+/*    {*/
+/*        width: 150px;*/
+/*    }*/
+
+/*    .registry-members__inn, .group1_inn{*/
+/*        width: 244px;*/
+/*    }*/
+/*    .registry-members__status, .group1_sro_member_status {*/
+/*        width: 248px;*/
+/*    }*/
+
+/*    .registry-members__legalstatus, .group2_legal_status {*/
+/*        width: 194px;*/
+/*    }*/
+
+/*}*/
+
+
+
+/*end*/
+
+.switcher {
+    display: none;
+    padding: 20px;
+    background: red;
+}
+.switcher input {
+    /*display: none;*/
+    width: auto;
+}
+
+.switcher {
+    display: none;
+    padding: 20px;
+    background: red;
+}
+.switcher input {
+    /*display: none;*/
+    width: auto;
+}
+
+.bx-pagination .bx-pagination-container ul li.bx-active span {
+    background: #607da8;
+    color: #fff;
+}
+
+.with-aside__content ul li::before {
+    content: "";
+}
+
+.registry-members__list.table__list {
+	font-size:14px;
+}

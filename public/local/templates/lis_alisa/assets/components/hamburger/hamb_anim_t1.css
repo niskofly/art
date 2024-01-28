@@ -1,0 +1,43 @@
+.hamburger,
+.hamburger:before,
+.hamburger:after {
+	width: 21.6px;
+
+	border-top: 1px solid #6d7578;
+	cursor: pointer;
+}
+
+.hamburger:before,
+.hamburger:after {
+	display: block;
+	margin: 6px auto 0 0;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	content: "";
+}
+
+.hamburger:after {
+	width: 15px;
+}
+
+.hamburger--active {
+	margin-top: -7px;
+
+	border: none;
+}
+
+.hamburger--active:before {
+	width: 24px;
+
+	transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--active:after {
+	width: 25px;
+	margin-top: 14px;
+
+	transform: translateY(-8px) rotate(-45deg);
+}

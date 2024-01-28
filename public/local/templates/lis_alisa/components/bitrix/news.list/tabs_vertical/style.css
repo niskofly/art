@@ -1,0 +1,145 @@
+.tabs-vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.tabs-vertical__nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.tabs-vertical__nav-item {
+	margin-bottom: 5px;
+	padding: 10px;
+
+	color: var(--second-base-color);
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 120%;
+
+	background: var(--disabled-color);
+
+	border: 2px solid transparent;
+	border-radius: 32px;
+	cursor: pointer;
+
+	transition: all 0.3s linear;
+}
+
+.tabs-vertical__nav-item:last-child {
+	margin-bottom: 0;
+}
+
+.tabs-vertical__nav-item:hover {
+	color: var(--corporate-color);
+}
+
+.tabs-vertical__nav-item:active {
+	box-shadow: 0px 0px 20px rgba(108, 27, 121, 0.2);
+}
+
+.tabs-vertical__nav-item.active {
+	color: var(--corporate-color);
+
+	border-color: var(--corporate-color);
+}
+
+.tabs-vertical__list {
+	width: 100%;
+	padding: 30px 20px;
+
+	background: var(--white-color);
+	border-radius: 24px;
+}
+
+.tabs-vertical__item {
+	height: 0;
+	overflow: hidden;
+
+	opacity: 0;
+
+	transition: all 0.3s linear;
+}
+
+.tabs-vertical__item.active {
+	height: auto;
+
+	opacity: 1;
+}
+
+.tabs-vertical__content {
+	color: #000;
+}
+
+.tabs-vertical__content b {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+.tabs-vertical__content * {
+	margin-bottom: 15px;
+}
+
+.tabs-vertical__content *:last-child {
+	margin-bottom: 0;
+}
+/* @media (min-width: 375px) {} */
+@media (min-width: 834px) {
+	.tabs-vertical__nav {
+		margin-bottom: 40px;
+	}
+
+	.tabs-vertical__nav-item {
+		margin-bottom: 10px;
+		padding: 20px 40px;
+
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.tabs-vertical__list {
+		padding: 60px 40px;
+	}
+
+	.tabs-vertical__content b {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	.tabs-vertical__content * {
+		margin-bottom: 10px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.tabs-vertical {
+		flex-direction: row;
+
+		column-gap: 30px;
+	}
+
+	.tabs-vertical__nav {
+		width: calc(((100% - (((30px * 12) / 5) - 30px)) / 12) * 5);
+	}
+
+	.tabs-vertical__list {
+		flex: 1;
+	}
+}
+
+@media (min-width: 1920px) {
+	.tabs-vertical {
+		justify-content: center;
+	}
+
+	.tabs-vertical__nav {
+		width: calc(((100% - (((30px * 12) / 4) - 30px)) / 12) * 4);
+	}
+
+	.tabs-vertical__list {
+		max-width: calc(((100% - (((30px * 12) / 6) - 30px)) / 12) * 6);
+	}
+}

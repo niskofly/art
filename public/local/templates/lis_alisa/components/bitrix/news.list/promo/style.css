@@ -1,0 +1,46 @@
+.promo__list {
+	margin-top: -25px;
+	margin-bottom: -25px;
+}
+
+.promo__item {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+@media (min-width: 1150px) {
+	.promo__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+
+	.promo__item {
+		width: 50%;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.promo__item {
+		flex-grow: 1;
+		width: 33.33%;
+	}
+
+	.promo__item:nth-child(1),
+	.promo__item:nth-child(2) {
+		width: 50%;
+		min-width: unset;
+		max-width: unset;
+	}
+
+	.promo .tails-t5__content {
+		min-height: 400px;
+	}
+}
+
+@media (min-width: 1500px) {
+	.promo__item {
+		width: 25%;
+	}
+}

@@ -1,0 +1,150 @@
+.site .js-fbf2-alert-danger,
+.site .js-fbf2-alert-success {
+	display: none;
+}
+
+.site .form-container {
+	max-width: 500px;
+
+	line-height: 1.3em;
+	text-align: left;
+}
+
+.site .modal-title {
+	margin-bottom: 15px;
+
+	color: #222;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 130%;
+	text-transform: uppercase;
+}
+
+.site .form-required {
+	color: red;
+}
+
+.site .message {
+	display: none;
+
+	font-size: 18px;
+	line-height: 2em;
+	text-align: center;
+}
+
+.site .message > div {
+	margin-bottom: 50px;
+	padding: 44px;
+
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+
+	border-radius: 10px;
+}
+
+.site .message .success {
+	border-color: #7a983d;
+}
+
+.site .message .warning {
+	border-color: red;
+}
+
+.site .form-body--horizontal {
+	display: flex;
+}
+
+.site .form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.site .form-group__field-label {
+	margin-bottom: 5px;
+}
+
+.site input[type="text"],
+.site input[type="password"],
+.site input[type="email"],
+.site input[type="date"],
+.site input[type="tel"],
+.site select,
+.site textarea {
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 13px 20px;
+
+	color: #222;
+	font-size: 18px;
+	line-height: 25px;
+
+	background: #fff;
+	border: 2px solid rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+
+.site input[type="date"] {
+	width: fit-content;
+}
+
+.site input[type="file"] {
+	color: inherit;
+}
+
+.site input::placeholder,
+.site textarea::placeholder {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.site .form-check__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.site .form-check-input {
+	display: none;
+}
+
+.site .form-group__check-label {
+	display: block;
+	margin: 0 10px 10px;
+	padding: 7px 10px;
+
+	background-color: white;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.site .form-check input:checked + .form-group__check-label {
+	color: white;
+}
+
+.site .agreement {
+	margin-top: 30px;
+
+	color: #757575;
+	font-size: 14px;
+	line-height: 130%;
+
+	opacity: 0.87;
+}
+
+.site .agreement a {
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.site input[type="text"].error,
+.site input[type="password"].error {
+	color: red;
+
+	border-color: red;
+}

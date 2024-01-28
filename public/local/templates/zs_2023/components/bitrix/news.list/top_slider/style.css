@@ -1,0 +1,101 @@
+.main-slider .item {
+	display: block;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.top-slider-placeholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.main-slider .item {
+		height: 280px;
+	}
+
+	.top-slider-placeholder {
+		height: 280px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.main-slider .item {
+		height: 450px;
+	}
+
+	.top-slider-placeholder {
+		height: 450px;
+	}
+}
+
+.top-slider {
+	position: relative;
+}
+
+.top-slider-upload {
+	position: absolute !important;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.top-slider a.item,
+.top-slider a.item:hover {
+	border-bottom: none;
+}
+
+.top-slider .item img {
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+}
+
+.top-slider-placeholder picture {
+	height: 100%;
+}
+
+.top-slider-placeholder img {
+	object-fit: cover;
+	object-position: center;
+	height: 100%;
+}
+
+.top-slider .owl-dots {
+	position: absolute;
+	height: 0;
+	bottom: 45px;
+}
+
+.top-slider .owl-dots button span {
+	margin: 0 7px;
+}
+
+.main-slider .arrow-type-2 .owl-nav {
+	right: 0;
+	left: 0;
+}
+
+.main-slider .owl-carousel .owl-nav button div {
+	padding: 20px 0 20px 60px;
+	margin: 60px 0;
+	background-position: right;
+}
+
+.main-slider .owl-nav button.owl-next div {
+	padding-right: 60px;
+	padding-left: 0;
+}
+
+.top-slider .sk-circle-bounce {
+	width: 3em;
+	height: 5em;
+}
+
+.top-slider .sk-circle-bounce .sk-child:before {
+	background-color: #9fd4d4;
+}

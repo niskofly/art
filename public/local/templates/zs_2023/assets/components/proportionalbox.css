@@ -1,0 +1,26 @@
+.proportional-box {
+	display: block;
+	width: 100%;
+	padding-top: 100%; /* 1:1 Aspect Ratio */
+	position: relative; /* If you want text inside of it */
+}
+
+.proportional-box__content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1; /* Иначе может перекрыть всякие всплывахи */
+}
+/* If you want text inside of the container */
+img.proportional-box__content {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+/* 16:9 Aspect Ratio */
+.ratio16_9 {
+	padding-top: 56.25%;
+}

@@ -1,0 +1,148 @@
+.js-fbf2-alert-danger,
+.js-fbf2-alert-success {
+	display: none;
+}
+
+.form-container {
+	max-width: 500px;
+
+	line-height: 1.3em;
+	text-align: left;
+}
+
+.modal-title {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 130%;
+	text-transform: uppercase;
+	color: #222222;
+	margin-bottom: 15px;
+}
+
+.form-required {
+	color: red;
+}
+
+.message {
+	display: none;
+
+	font-size: 18px;
+	line-height: 2em;
+	text-align: center;
+}
+
+.message > div {
+	margin-bottom: 50px;
+	padding: 44px;
+
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+
+	border-radius: 10px;
+}
+
+.message .success {
+	border-color: #7a983d;
+}
+
+.message .warning {
+	border-color: red;
+}
+
+
+.form-body--horizontal {
+	display: flex;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.form-group__field-label {
+	margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='date'],
+input[type='tel'],
+select,
+textarea {
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 13px 20px;
+
+	color: #222;
+	font-size: 18px;
+	line-height: 25px;
+
+	background: #fff;
+	border: 2px solid rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+}
+
+input[type='date'] {
+	width: fit-content;
+}
+
+input[type='file'] {
+	color: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #c4c4c4;
+	font-size: 16px;
+	font-style: italic;
+	text-transform: lowercase;
+}
+
+.form-check__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+
+.form-check-input {
+	display: none;
+}
+
+.form-group__check-label {
+	display: block;
+	margin: 0 10px 10px;
+	padding: 7px 10px;
+
+	background-color: white;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.form-check input:checked + .form-group__check-label {
+	color: white;
+}
+
+.agreement {
+	margin-top: 30px;
+
+	color: #757575;
+	font-size: 14px;
+	line-height: 130%;
+
+	opacity: 0.87;
+}
+
+.agreement a {
+	color: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+input[type='text'].error {
+	color: red;
+
+	border-color: red;
+}

@@ -1,0 +1,25 @@
+.text-with-bg {
+	padding: 65px 55px;
+
+	background-position: center;
+	background-size: cover;
+}
+
+.text-with-bg--text-right .text-with-bg__text {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+.text-with-bg__text {
+	width: 100%;
+	max-width: 760px;
+
+	padding: 15px 30px;
+
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+
+	background-color: rgba(0, 0, 0, 0.56);
+}

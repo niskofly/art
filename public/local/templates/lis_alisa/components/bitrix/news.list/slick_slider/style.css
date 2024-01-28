@@ -1,0 +1,11 @@
+.photos-height-lock__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.photos-height-lock__list {
+		justify-content: flex-start;
+	}
+}

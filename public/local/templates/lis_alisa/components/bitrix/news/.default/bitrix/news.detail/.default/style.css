@@ -1,0 +1,25 @@
+.b7_f {
+	max-width: 959px;
+}
+
+.month {
+	letter-spacing: 1em;
+	text-transform: lowercase;
+	text-align: right;
+}
+
+.b7_w4 {
+	text-transform: uppercase;
+}
+
+.month {
+	letter-spacing: 1em;
+	text-transform: lowercase;
+	text-align: right;
+}
+
+img {
+	/*width: 100%;*/
+	height: auto;
+}
+

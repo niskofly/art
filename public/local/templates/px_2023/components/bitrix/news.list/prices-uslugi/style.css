@@ -1,0 +1,45 @@
+div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}
+
+
+.prices__price{
+	text-align: right;
+}
+
+.news-prices tr:first-of-type{
+	display: flex;
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+	background: #E8F4F4;
+	color: #333438;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300 !important;
+}
+
+.news-prices tr:first-of-type th{
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 300 !important;
+}
+
+
+.table-prices{
+	border-radius: 15px;
+	background: #FFF;
+	box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.20), -6px -6px 16px 0px rgba(255, 255, 255, 0.80);
+	padding: 20px 20px 40px 20px;
+	width: 100%;
+	margin-bottom: 100px;
+}
+

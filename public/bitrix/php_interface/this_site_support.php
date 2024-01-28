@@ -1,0 +1,2 @@
+<a href="http://prexpert.com" target="_blank" rel="nofollow" class="adm-main-support-link">Пиар Эксперт</a> <br>
+Техподдержка: 8 800 555-27-46 <a href="mailto:support@prexpert.ru" target="_blank" rel="nofollow">support@prexpert.ru</a> 

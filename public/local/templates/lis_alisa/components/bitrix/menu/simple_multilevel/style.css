@@ -1,0 +1,9 @@
+.catalog-menu {
+	justify-content: space-between;
+}
+
+.catalog-menu > .multilevel-nav__item {
+	flex-grow: 1;
+	flex-shrink: 0;
+	width: 105px;
+}

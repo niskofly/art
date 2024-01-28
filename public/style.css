@@ -1,0 +1,26 @@
+.form-body{
+	display: flex;
+}
+
+
+.form-main__row{
+	display: flex;
+	align-items: center;
+}
+
+
+.button--new{
+	border-radius: 30px;
+	background: linear-gradient(241deg, #FF8EED -3.08%, #FF9DA9 71.62%);
+	box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.20), -4px -4px 16px 0px rgba(255, 255, 255, 0.80);
+	padding: 12px 30px;
+}
+
+.form-body .form-group {
+	margin-bottom: 0;
+}
+
+
+.banner-section{
+	margin-top: 20px;
+}
